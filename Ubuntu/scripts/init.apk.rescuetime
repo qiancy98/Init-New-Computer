@@ -1,0 +1,6 @@
+#!/bin/sh
+mkdir -p ~/deb
+wget -P ~/deb/ "https://www.rescuetime.com/installers/rescuetime_current_amd64.deb"
+rescuetime --install
+cp -v init.apk.rescuetime.desktop ~/.config/autostart/rescuetime.desktop
+cp -v scripts/init.apk.rescuetime.desktop ~/.config/autostart/rescuetime.desktop

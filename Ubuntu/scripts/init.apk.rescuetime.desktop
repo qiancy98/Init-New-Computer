@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=rescuetime
+Comment=A Time manager. (.desktop is created myself)
+Exec=rescuetime
+Terminal=false
+Type=Application
+Icon=rescuetime
+Encoding=UTF-8
+StartupWMClass=RescueTime

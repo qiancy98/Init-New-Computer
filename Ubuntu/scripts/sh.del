@@ -1,0 +1,10 @@
+#!/bin/bash
+TRASH_DIR="$HOME/.local/share/Trash/files"
+for i in $*; do
+    STAMP=`date +%m-%d-%H:%M:%S`
+    fileName=`basename $i`
+    mv -v "$i" "$TRASH_DIR/$fileName.$STAMP"
+done
+#
+# From: https://blog.csdn.net/z2066411585/article/details/79692339 
+

@@ -1,0 +1,1 @@
+latexmk -xelatex -logfilewarninglist -time -synctex=1 -file-line-error -pvc -silent *.tex

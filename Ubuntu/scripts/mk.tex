@@ -1,0 +1,33 @@
+ifeq ($(origin Help), undefined)
+Help = Help:\n
+help:
+	@echo "$(Help)"
+endif
+
+Help+=\n**tex.mk**\n	*.xe		Use XeLaTeX to compile *.tex\n	*.xe.zip	First compile, and then zip it.\n	*.sp		Use XeLaTeX to compile $(Patten)*.tex\n	*.sp.zip	First compile, and then zip it.\n	clean.tex	Clean tex compile files.\n	--eval=Patten=SomePatten	To change the patten. No space is allowed.\n
+
+TeXCmd = latexmk -xelatex -logfilewarninglist -time -synctex=1 -file-line-error
+WinTeXCmd = xelatex.exe -time-statistics -synctex=1 -quiet -c-style-errors
+
+Patten ?= Kalmanson_v2.
+
+%.sp: $(Patten)%.tex
+	$(TeXCmd) $<
+
+%.sp.zip: %.sp
+	zip $(Patten)$*.zip *.pdf *.tex *.bib *.synctex.gz *.txt
+
+%.win: %.tex
+	$(WinTeXCmd) $<
+
+%.xe: %.tex
+	$(TeXCmd) $<
+
+%.xe.zip: %.xe
+	zip $(Patten)$*.zip *.pdf *.tex *.bib *.synctex.gz *.txt
+
+clean.tex:
+	rm -v -f *.aux *.blg *.fls *.out *.toc *.log *.fdb_latexmk
+
+open_folder:
+	nautilus .

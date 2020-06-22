@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "请确认在虚拟机中。此命令包含sudo。"
+read -p "请输入要挂载的目录：" FolderName
+echo sudo mkdir -p /media/$FolderName
+sudo mkdir -p /media/$FolderName
+echo sudo mount -t vboxsf $FolderName /media/$FolderName
+sudo mount -t vboxsf $FolderName /media/$FolderName

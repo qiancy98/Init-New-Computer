@@ -1,0 +1,5 @@
+#!bin/sh
+echo sudo apt-get install arbtt
+sudo apt-get install arbtt
+cp -v init.apk.time.categorize ~/.arbtt/categorize.cfg
+cp -v /usr/share/doc/arbtt/examples/arbtt-capture.desktop ~/.config/autostart

@@ -1,0 +1,31 @@
+00-VSCode
+01-MiKTeX
+02-mathematica
+03-mathpix
+09-Rescuetime
+22-uTorrent
+23-FreeFileSync
+30-Google Drive（自动下载安装包）
+31 QQ播放器
+31-QQ拼音
+31-QQ
+31-微信
+31-野狐围棋
+
+choco:
+    make
+    git
+    7zip
+    pandoc
+    pdfsam
+    python
+    strawberryperl
+
+-: 仅需指定备份目录/登录
++: 需要详细配置
+
+便携式软件配置：
+v2ray 开机自启动
+
+应用商店：
+Ubuntu
