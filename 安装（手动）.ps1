@@ -2,6 +2,7 @@
 # $client.DownloadFile('https://www.rescuetime.com/installers/RescueTimeInstaller.exe','D:\Program Files\~安装包\03 时间管理\RescueTimeInstaller.exe')
 # Start-Process "D:\Program Files\~安装包\03 时间管理\RescueTimeInstaller.exe" -NoNewWindow
 
+& "D:\Program Files\~安装包\02 Wolfram编译器\M-WIN-WolframEngine-12.0.1-6478682\setup.exe" /S
 & "D:\Program Files\~安装包\03 时间管理\RescueTimeInstaller.exe" /S
 & "D:\Program Files\~安装包\21 文件云同步\googledrivesync.exe" /S
 & "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\uTorrent.exe" /S
