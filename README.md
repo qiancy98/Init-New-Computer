@@ -12,12 +12,14 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 ## ./常用软件/
 短时间使用电脑下，最常用的文件。部分文件由于体积过大，需要联网运行[常用软件/下载软件.sh](常用软件/下载软件.sh)得到。也可安装[WinGet](常用软件/winget%20v0.1.appxbundle)后执行[常用软件/下载软件.ps1](常用软件/下载软件.ps1)得到。
 
-软件主页链接：
+（我喜欢的）软件主页链接：
 - [WinGet](https://github.com/microsoft/winget-cli)
 - [VS Code](https://github.com/microsoft/vscode)
 - [SumatraPDF](https://github.com/sumatrapdfreader/sumatrapdf)
 - [V2rayN](https://github.com/2dust/v2rayN)
-- [7zip (外链)](https://www.7-zip.org/)
+- [7zip](https://www.7-zip.org/) (外链)
+- [MiKTeX](https://github.com/MiKTeX/miktex)
+- [Scoop](https://github.com/lukesampson/scoop) 安装绿色软件用(未尝试)
 
 ## ./Ubuntu/
 运行[Ubuntu/init-wsl.sh](Ubuntu/init-wsl.sh)以初始化Ubuntu（wsl：Windows的Linux子系统）。
@@ -31,7 +33,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 
 | 文件夹编号 | 配置复杂性* | 软件名       |
 | - | - | -  |
-| 02         | -           | mathematica  |
+| 02         | -           | Mathematica  |
 | 03         | -           | Rescuetime   |
 | 21         | -           | Google Drive |
 | 22         | -           | uTorrent     |
@@ -52,3 +54,23 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 * `+`代表详细配置
 * `-`代表仅需登录
 * 无代表什么都不用做
+
+# 致谢
+| 解决方案 | 项目 | 已用脚本安装？ |
+| - | - | - |
+| Git-Gui汉化 | [stayor/git-gui-zh](https://github.com/stayor/git-gui-zh) | 是 |
+| VS Code同步 | [nonoroazoro/vscode-syncing](https://github.com/nonoroazoro/vscode-syncing) | 否 |
+| MMA与VS Code协同 | [skidvision/wolfram-language](https://github.com/skidvision/wolfram-language) | 否 |
+| MMA与Jupyter协同 | [WolframResearch/WolframLanguageForJupyter](https://github.com/WolframResearch/WolframLanguageForJupyter) | 否 |
+| WeChat图片清理 | [blackboxo/CleanMyWechat](https://github.com/blackboxo/CleanMyWechat) | 免安装 |
+
+# 其他致谢
+- 软件
+	- [latex3/latex3](https://github.com/latex3/latex3)
+	- [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core)
+	- [NetchX/Netch](https://github.com/NetchX/Netch)
+	- [prati0100/git-gui](https://github.com/prati0100/git-gui) (官方的)
+- 文档
+	- [qinjx/30min_guides](https://github.com/qinjx/30min_guides)覃健祥的学习笔记(Shell入门)
+	- [changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial)欧长坤的书, C++1x文档
+	- [yernhi/collection-latex-templates](https://github.com/yernhi/collection-latex-templates)高校LaTeX模板
