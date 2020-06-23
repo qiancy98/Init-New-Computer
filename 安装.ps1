@@ -31,7 +31,7 @@ winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Mathpix.MathpixSnippingTool
 
 # PDF相关
-# winget install -e --id JohnMacFarlane.Pandoc # Not supported yet
+winget install -e --id JohnMacFarlane.Pandoc
 winget install -e --id PDFsam.PDFsam
 
 # 编译器

@@ -44,7 +44,6 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 | 31         | -           | 野狐围棋     |
 | WinGet     | +           | VS Code      |
 | WinGet     | +           | MikTeX       |
-| WinGet     | 包中缺失  | PanDoc       |
 | 应用商店   | +           | Ubuntu       |
 | 便携软件   | 开机自启    | V2ray        |
 | 便携软件   | 设为默认    | SumatraPDF   |
