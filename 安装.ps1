@@ -53,6 +53,9 @@ winget install -e --id ChristianSchenk.MiKTeX
 # 刷新环境变量
 RefreshEnv
 
+# 复制文件
+Copy-Item ".\其他脚本\安装\msgs" "C:\Program Files\Git\mingw64\share\git-gui\lib\" -recurse
+
 # Git配置
 git config --global user.email "q-young@qq.com"
 git config --global user.name "QianCY"
