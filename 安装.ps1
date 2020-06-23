@@ -46,6 +46,9 @@ winget install -e --id ChristianSchenk.MiKTeX
 # 需要改名。此处链接也需更改。
 # copy "C:\Program Files\ImageMagick-7.0.10-Q16\convert.exe" "C:\Program Files\ImageMagick-7.0.10-Q16\imgconvert.exe"
 
+# 设置环境变量
+[environment]::SetEnvironmentvariable("Path",[environment]::GetEnvironmentvariable("Path", "User")+";C:\Program Files\Python38\Scripts", "User")
+
 # 刷新环境变量
 RefreshEnv
 
