@@ -8,7 +8,7 @@ Set-ExecutionPolicy AllSigned
 # 安装winget
 & "D:\Program Files\~安装包\33 微软软件\winget v0.1.appxbundle"
 
-.\安装所有软件.ps1
+.\安装（手动）.ps1
 
 # 安装可选功能: 无线显示器
 Add-WindowsCapability -Online -Name App.WirelessDisplay*
@@ -22,11 +22,12 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRes
 # 更新帮助
 Update-Help
 
-# 安装诸程序
+# 安装GNU程序
 winget install -e --id GnuWin32.Make
 winget install -e --id Git.Git
 winget install -e --id 7zip.7zip
 
+# 安装诸程序
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Mathpix.MathpixSnippingTool
 
