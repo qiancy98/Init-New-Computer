@@ -63,6 +63,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 | MMA与VS Code协同 | [skidvision/wolfram-language](https://github.com/skidvision/wolfram-language) | 否 |
 | MMA与Jupyter协同 | [WolframResearch/WolframLanguageForJupyter](https://github.com/WolframResearch/WolframLanguageForJupyter) | 否 |
 | WeChat图片清理 | [blackboxo/CleanMyWechat](https://github.com/blackboxo/CleanMyWechat) | 免安装 |
+| 磁盘信息查询 | [hiyohiyo/CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo) | 免安装 |
 
 # 其他致谢
 - 软件
