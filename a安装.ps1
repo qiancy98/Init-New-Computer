@@ -86,5 +86,5 @@ cpan Log::Dispatch::File
 cpan YAML::Tiny
 cpan File::HomeDir
 cpan Unicode::GCString
-cpan Log::Log4perl
-# If failed, pls use "cpan -fi Log::Log4perl".
+cpan -Ti Log::Log4perl
+# Will fail 1 test, so have to 'f'orce install. 'T' forbids the tests. 
