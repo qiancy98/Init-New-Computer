@@ -7,7 +7,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 用来初始化新Windows机器。
 
 # 文件说明
-主目录下，[a安装.ps1](a安装.ps1)用来在Windows下安装；[安装（手动）.ps1](安装（手动）.ps1)用来指导手动安装。这两个文件的编码是GB2312。
+主目录下，[a安装.ps1](a安装.ps1)用来在Windows下安装，文件编码是GB2312。
 
 ## ./常用软件/
 短时间使用电脑下，最常用的文件。部分文件由于体积过大，需要联网运行[常用软件/下载软件.sh](常用软件/下载软件.sh)得到。也可安装[WinGet](常用软件/winget%20v0.1.appxbundle)后执行[常用软件/下载软件.ps1](常用软件/下载软件.ps1)得到。
@@ -29,7 +29,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 大多数文件都不用管，除了[mk.cpp](Ubuntu/scripts/mk.cpp)和[mk.tex](Ubuntu/scripts/mk.tex)分别用来编译C++文件和tex文件。
 
 # 安装说明
-此处描述的是我安装包的放置位置。由于上传Github时忽略了几乎所有安装包，所以大家不必理会。（原位置在“./安装说明.txt”，现合并至此。）也可在文件[安装（手动）.ps1](安装（手动）.ps1)中查看。
+此处描述的是我安装包的放置位置。由于上传Github时忽略了几乎所有安装包，所以大家不必理会。也可在文件[软件包安装.ps1](其他脚本/安装/软件包安装.ps1)中查看(注意此文件编码为GB2312)。
 
 | 文件夹编号 | 配置复杂性* | 软件名       |
 | - | - | -  |
@@ -37,7 +37,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 | 03         | -           | Rescuetime   |
 | 21         | -           | Google Drive |
 | 22         | -           | uTorrent     |
-| 23         | +           | FreeFileSync |
+| 23         | 已内置      | FreeFileSync |
 | 31         |             | QQ播放器     |
 | 31         | -           | QQ音乐       |
 | 31         | -           | QQ拼音       |
@@ -45,7 +45,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 | 31         | -           | 微信         |
 | 31         | -           | 野狐围棋     |
 | WinGet     | +           | VS Code      |
-| WinGet     | +           | MikTeX       |
+| WinGet     | 已内置      | MikTeX       |
 | 应用商店   | +           | Ubuntu       |
 | 便携软件   | 开机自启    | V2ray        |
 | 便携软件   | 设为默认    | SumatraPDF   |
@@ -55,11 +55,13 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 * `-`代表仅需登录
 * 无代表什么都不用做
 
+<!--
 > FreeFileSync  
 >> 全局设置->勾选“复制锁定文件”  
 >> 或者将如下行的false改为true:  
 >> File: %APPDATA%/FreeFileSync  
 >> `<CopyLockedFiles Enabled="false"/>` 
+ -->
 
 # 致谢
 | 解决方案 | 项目 | 已用脚本安装？ |

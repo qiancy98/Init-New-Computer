@@ -13,7 +13,8 @@ Set-ExecutionPolicy AllSigned
 # 安装winget
 & "D:\Program Files\~安装包\33 微软软件\winget v0.1.appxbundle"
 
-.\安装（手动）.ps1
+# 软件包安装
+& ".\其他脚本\安装\软件包安装.ps1"
 
 # 安装可选功能: 无线显示器
 Add-WindowsCapability -Online -Name App.WirelessDisplay*
