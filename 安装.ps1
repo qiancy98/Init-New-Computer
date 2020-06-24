@@ -1,3 +1,5 @@
+# Encoding: GB2312
+
 # Please use admin ps.
 # Enter this sentence and run this powershell.
 # Set-ExecutionPolicy Unrestricted -Scope Process
@@ -5,58 +7,58 @@
 Set-ExecutionPolicy AllSigned
 # set HTTP_PROXY=http://localhost:10809
 
-# å®‰è£…winget
-& "D:\Program Files\~å®‰è£…åŒ…\33 å¾®è½¯è½¯ä»¶\winget v0.1.appxbundle"
+# °²×°winget
+& "D:\Program Files\~°²×°°ü\33 Î¢ÈíÈí¼ş\winget v0.1.appxbundle"
 
-.\å®‰è£…ï¼ˆæ‰‹åŠ¨ï¼‰.ps1
+.\°²×°£¨ÊÖ¶¯£©.ps1
 
-# å®‰è£…å¯é€‰åŠŸèƒ½: æ— çº¿æ˜¾ç¤ºå™¨
+# °²×°¿ÉÑ¡¹¦ÄÜ: ÎŞÏßÏÔÊ¾Æ÷
 Add-WindowsCapability -Online -Name App.WirelessDisplay*
 
-# å®‰è£…å¯é€‰åŠŸèƒ½: WSL
+# °²×°¿ÉÑ¡¹¦ÄÜ: WSL
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
 # dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 # dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 
-# æ›´æ–°å¸®åŠ©
+# ¸üĞÂ°ïÖú
 Update-Help
 
-# å®‰è£…GNUç¨‹åº
+# °²×°GNU³ÌĞò
 winget install -e --id GnuWin32.Make
 winget install -e --id Git.Git
 winget install -e --id 7zip.7zip
 
-# å®‰è£…è¯¸ç¨‹åº
+# °²×°Öî³ÌĞò
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Mathpix.MathpixSnippingTool
 
-# PDFç›¸å…³
+# PDFÏà¹Ø
 winget install -e --id JohnMacFarlane.Pandoc
 winget install -e --id PDFsam.PDFsam
 
-# ç¼–è¯‘å™¨
+# ±àÒëÆ÷
 winget install -e --id Python.Python
 winget install -e --id StrawberryPerl.StrawberryPerl
 winget install -e --id ChristianSchenk.MiKTeX
 
-# å¯é€‰/å›¾ç‰‡
+# ¿ÉÑ¡/Í¼Æ¬
 # winget install -e --id Inkscape.Inkscape
 # winget install -e --id ImageMagick.ImageMagick
 # winget install -e --id ArtifexSoftware.GhostScript
-# éœ€è¦æ”¹åã€‚æ­¤å¤„é“¾æ¥ä¹Ÿéœ€æ›´æ”¹ã€‚
+# ĞèÒª¸ÄÃû¡£´Ë´¦Á´½ÓÒ²Ğè¸ü¸Ä¡£
 # copy "C:\Program Files\ImageMagick-7.0.10-Q16\convert.exe" "C:\Program Files\ImageMagick-7.0.10-Q16\imgconvert.exe"
 
-# è®¾ç½®ç¯å¢ƒå˜é‡
+# ÉèÖÃ»·¾³±äÁ¿
 [environment]::SetEnvironmentvariable("Path",[environment]::GetEnvironmentvariable("Path", "User")+";C:\Program Files\Python38\Scripts", "User")
 
-# åˆ·æ–°ç¯å¢ƒå˜é‡
+# Ë¢ĞÂ»·¾³±äÁ¿
 RefreshEnv
 
-# å¤åˆ¶æ–‡ä»¶
-Copy-Item ".\å…¶ä»–è„šæœ¬\å®‰è£…\msgs" "C:\Program Files\Git\mingw64\share\git-gui\lib\" -recurse
+# ¸´ÖÆÎÄ¼ş
+Copy-Item ".\ÆäËû½Å±¾\°²×°\msgs" "C:\Program Files\Git\mingw64\share\git-gui\lib\" -recurse
 
-# Gité…ç½®
+# GitÅäÖÃ
 git config --global user.email "q-young@qq.com"
 git config --global user.name "QianCY"
 git config --global core.editor "code --wait"
@@ -64,7 +66,7 @@ git config --global credential.helper "wincred"
 git config --global gui.encoding "utf-8"
 git config --global gui.tabsize 4
 
-# Pythoné…ç½®
+# PythonÅäÖÃ
 py -m pip --proxy http://127.0.0.1:10809 install --upgrade pip # --force-reinstall
 # Jupyter
 py -m pip --proxy http://127.0.0.1:10809 install jupyter numpy sympy # scipy matplotlib
@@ -73,12 +75,12 @@ py -m pip --proxy http://127.0.0.1:10809 install jupyter numpy sympy # scipy mat
 py -m pip --proxy http://127.0.0.1:10809 install wolframclient
 # QQ bot
 py -m pip --proxy http://127.0.0.1:10809 install nonebot xlrd
-# åˆ¤æ–­å­—ç¬¦é›†ç¼–ç 
-# ä¸çŸ¥é“æ˜¯å¦ç³»ç»Ÿè‡ªå¸¦æ‰€ä»¥å…ˆæ³¨é‡Š
+# ÅĞ¶Ï×Ö·û¼¯±àÂë
+# ²»ÖªµÀÊÇ·ñÏµÍ³×Ô´øËùÒÔÏÈ×¢ÊÍ
 # py -m pip --proxy http://127.0.0.1:10809 install chardet
 
-# Perlé…ç½®
-# Perlä¸»è¦ç”¨ä½œLaTeXç¼–è¯‘
+# PerlÅäÖÃ
+# PerlÖ÷ÒªÓÃ×÷LaTeX±àÒë
 cpan Log::Dispatch::File
 cpan YAML::Tiny
 cpan File::HomeDir

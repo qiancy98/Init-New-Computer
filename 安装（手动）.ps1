@@ -1,22 +1,24 @@
-# $client = new-object System.Net.WebClient
-# $client.DownloadFile('https://www.rescuetime.com/installers/RescueTimeInstaller.exe','D:\Program Files\~å®‰è£…åŒ…\03 æ—¶é—´ç®¡ç†\RescueTimeInstaller.exe')
-# Start-Process "D:\Program Files\~å®‰è£…åŒ…\03 æ—¶é—´ç®¡ç†\RescueTimeInstaller.exe" -NoNewWindow
+# Encoding: GB2312
 
-& "D:\Program Files\~å®‰è£…åŒ…\02 Wolframç¼–è¯‘å™¨\M-WIN-WolframEngine-12.0.1-6478682\setup.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\03 æ—¶é—´ç®¡ç†\RescueTimeInstaller.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\21 æ–‡ä»¶äº‘åŒæ­¥\googledrivesync.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\22 æ–‡ä»¶ä¸‹è½½ Î¼Torrent\3.5.5\uTorrent.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\23 æ•°æ®å¤‡ä»½ FreeFileSync\FreeFileSync_10.24_Windows_Setup.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\31 è…¾è®¯è½¯ä»¶\QQ9.0.4Trial.exe"
-& "D:\Program Files\~å®‰è£…åŒ…\31 è…¾è®¯è½¯ä»¶\QQMusic_YQQFloatLayer.exe.exe"
-& "D:\Program Files\~å®‰è£…åŒ…\31 è…¾è®¯è½¯ä»¶\QQPinyin_Setup_6.2.5507.400.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\31 è…¾è®¯è½¯ä»¶\QQPlayerSetup4.2.4.827.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\31 è…¾è®¯è½¯ä»¶\WeChatSetup.exe"
-& "D:\Program Files\~å®‰è£…åŒ…\31 è…¾è®¯è½¯ä»¶\é‡Žç‹å›´æ£‹ install.exe" /S
-& "D:\Program Files\~å®‰è£…åŒ…\33 å¾®è½¯è½¯ä»¶\MicrosoftEdgeSetup.exe" /S
+# $client = new-object System.Net.WebClient
+# $client.DownloadFile('https://www.rescuetime.com/installers/RescueTimeInstaller.exe','D:\Program Files\~°²×°°ü\03 Ê±¼ä¹ÜÀí\RescueTimeInstaller.exe')
+# Start-Process "D:\Program Files\~°²×°°ü\03 Ê±¼ä¹ÜÀí\RescueTimeInstaller.exe" -NoNewWindow
+
+& "D:\Program Files\~°²×°°ü\02 Wolfram±àÒëÆ÷\M-WIN-WolframEngine-12.0.1-6478682\setup.exe" /S
+& "D:\Program Files\~°²×°°ü\03 Ê±¼ä¹ÜÀí\RescueTimeInstaller.exe" /S
+& "D:\Program Files\~°²×°°ü\21 ÎÄ¼þÔÆÍ¬²½\googledrivesync.exe" /S
+& "D:\Program Files\~°²×°°ü\22 ÎÄ¼þÏÂÔØ ¦ÌTorrent\3.5.5\uTorrent.exe" /S
+& "D:\Program Files\~°²×°°ü\23 Êý¾Ý±¸·Ý FreeFileSync\FreeFileSync_10.24_Windows_Setup.exe" /S
+& "D:\Program Files\~°²×°°ü\31 ÌÚÑ¶Èí¼þ\QQ9.0.4Trial.exe"
+& "D:\Program Files\~°²×°°ü\31 ÌÚÑ¶Èí¼þ\QQMusic_YQQFloatLayer.exe.exe"
+& "D:\Program Files\~°²×°°ü\31 ÌÚÑ¶Èí¼þ\QQPinyin_Setup_6.2.5507.400.exe" /S
+& "D:\Program Files\~°²×°°ü\31 ÌÚÑ¶Èí¼þ\QQPlayerSetup4.2.4.827.exe" /S
+& "D:\Program Files\~°²×°°ü\31 ÌÚÑ¶Èí¼þ\WeChatSetup.exe"
+& "D:\Program Files\~°²×°°ü\31 ÌÚÑ¶Èí¼þ\Ò°ºüÎ§Æå install.exe" /S
+& "D:\Program Files\~°²×°°ü\33 Î¢ÈíÈí¼þ\MicrosoftEdgeSetup.exe" /S
 
 # FreeFileSync:
-# 	å…¨å±€è®¾ç½®->å‹¾é€‰â€œå¤åˆ¶é”å®šæ–‡ä»¶â€
-# 	æˆ–è€…å°†å¦‚ä¸‹è¡Œçš„falseæ”¹ä¸ºtrue:
+# 	È«¾ÖÉèÖÃ->¹´Ñ¡¡°¸´ÖÆËø¶¨ÎÄ¼þ¡±
+# 	»òÕß½«ÈçÏÂÐÐµÄfalse¸ÄÎªtrue:
 # 	File: %APPDATA%/FreeFileSync
 # 	<CopyLockedFiles Enabled="false"/>
