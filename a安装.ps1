@@ -66,6 +66,7 @@ Copy-Item ".\其他脚本\安装\Git\zh_cn.msg" "C:\Program Files\Git\mingw64\share\gi
 Copy-Item ".\其他脚本\安装\Git\.gitconfig" "$env:USERPROFILE\"
 Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\" -recurse
 Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\" -recurse
+Copy-Item "D:\Program Files\~快捷方式\" "$env:USERPROFILE\Desktop\快捷方式\" -recurse
 
 # MikTeX配置
 & ".\其他脚本\安装\MiKTeX.ps1"
