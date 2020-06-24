@@ -58,6 +58,7 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 
 # 复制文件
 Copy-Item ".\其他脚本\安装\msgs" "C:\Program Files\Git\mingw64\share\git-gui\lib\" -recurse
+Copy-Item ".\其他脚本\安装\syncing.json" "$env:APPDATA/Code/User"
 
 # Git配置
 git config --global user.email "q-young@qq.com"
