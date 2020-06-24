@@ -2,7 +2,7 @@
 
 # Please use admin ps.
 # Enter this sentence and run this powershell.
-# Set-ExecutionPolicy Unrestricted -Scope Process
+# Set-ExecutionPolicy RemoteSigned -Scope Process
 
 echo "请确认已经打开全局代理^_^"
 pause
@@ -52,13 +52,11 @@ winget install -e --id ChristianSchenk.MiKTeX
 # 需要改名。此处链接也需更改。
 # copy "C:\Program Files\ImageMagick-7.0.10-Q16\convert.exe" "C:\Program Files\ImageMagick-7.0.10-Q16\imgconvert.exe"
 
+
+# 软件配置 config
 # 刷新环境变量
 # Update-SessionEnvironment # 安装choco后可使用
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-
-# 软件配置 config
-mpm --repository=http://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
-mpm --update
 
 # 复制文件
 # -recurse 可以用来递归复制; 若目标文件夹不存在, 则创建之.
@@ -66,9 +64,11 @@ Copy-Item ".\其他脚本\安装\Git\zh_cn.msg" "C:\Program Files\Git\mingw64\share\gi
 Copy-Item ".\其他脚本\安装\Git\.gitconfig" "$env:USERPROFILE\"
 Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\" -recurse
 Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\" -recurse
-Copy-Item "D:\Program Files\~快捷方式\" "$env:USERPROFILE\Desktop\快捷方式\" -recurse
+Copy-Item "D:\Program Files\~快捷方式\*" "$env:USERPROFILE\Desktop\快捷方式\" -recurse
 
 # MikTeX配置
+mpm --repository=http://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
+mpm --update
 & ".\其他脚本\安装\MiKTeX.ps1"
 
 # Python配置
