@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GUI" XmlFormat="16">
+    <Compare>
+        <Variant>TimeAndSize</Variant>
+        <Symlinks>Exclude</Symlinks>
+        <IgnoreTimeShift/>
+    </Compare>
+    <Synchronize>
+        <Variant>Mirror</Variant>
+        <DetectMovedFiles>true</DetectMovedFiles>
+        <DeletionPolicy>Versioning</DeletionPolicy>
+        <VersioningFolder Style="TimeStamp-File">G:\90 备份冲突</VersioningFolder>
+    </Synchronize>
+    <Filter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLE?\</Item>
+            <Item>*\thumbs.db</Item>
+        </Exclude>
+        <TimeSpan Type="None">0</TimeSpan>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+    </Filter>
+    <FolderPairs>
+        <Pair>
+            <Left>%UserProfile%</Left>
+            <Right>[My Reservation]\21 用户文件夹</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>\AppData</Item>
+                    <Item>\MicrosoftEdgeBackups</Item>
+                    <Item>\.vscode</Item>
+                    <Item>\NTUSER.DAT*</Item>
+                    <Item>\OneDrive</Item>
+                </Exclude>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+        <Pair>
+            <Left>D:/</Left>
+            <Right>[My Reservation]\20 长期维护文件</Right>
+            <Filter>
+                <Include>
+                    <Item>*</Item>
+                </Include>
+                <Exclude>
+                    <Item>\WindowsApps\</Item>
+                    <Item>\QQMusicCache\</Item>
+                    <Item>\Google 云端硬盘\.tmp.drivedownload\</Item>
+                    <Item>\Program Files\QQ bot\酷Q Air\data\image\</Item>
+                    <Item>\Tencent\QQ主程序\674880178\Image\Group2\</Item>
+                    <Item>\Tencent\QQ主程序\674880178\ExpressionRecommend\</Item>
+                </Exclude>
+                <TimeSpan Type="None">0</TimeSpan>
+                <SizeMin Unit="None">0</SizeMin>
+                <SizeMax Unit="None">0</SizeMax>
+            </Filter>
+        </Pair>
+    </FolderPairs>
+    <Errors Ignore="false" Retry="0" Delay="5"/>
+    <PostSyncCommand Condition="Completion"/>
+    <LogFolder/>
+    <EmailNotification Condition="Always"/>
+    <Gui>
+        <MiddleGridView>Action</MiddleGridView>
+    </Gui>
+</FreeFileSync>

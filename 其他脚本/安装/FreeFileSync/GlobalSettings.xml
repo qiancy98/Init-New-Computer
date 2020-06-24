@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GLOBAL" XmlFormat="18">
+    <General>
+        <Language Name="Chinese (Simplified)"/>
+        <FailSafeFileCopy Enabled="true"/>
+        <CopyLockedFiles Enabled="true"/>
+        <CopyFilePermissions Enabled="false"/>
+        <FileTimeTolerance Seconds="2"/>
+        <RunWithBackgroundPriority Enabled="false"/>
+        <LockDirectoriesDuringSync Enabled="true"/>
+        <VerifyCopiedFiles Enabled="false"/>
+        <LogFiles MaxAge="30" Format="HTML"/>
+        <NotificationSound CompareFinished="" SyncFinished="%ffs_resource%\bell.wav"/>
+        <ProgressDialog AutoClose="true"/>
+        <OptionalDialogs>
+            <ConfirmStartSync Show="false"/>
+            <ConfirmSaveConfig Show="true"/>
+            <ConfirmCommandMassInvoke Show="true"/>
+            <WarnFolderNotExisting Show="true"/>
+            <WarnFoldersDifferInCase Show="true"/>
+            <WarnUnresolvedConflicts Show="true"/>
+            <WarnNotEnoughDiskSpace Show="true"/>
+            <WarnSignificantDifference Show="true"/>
+            <WarnRecycleBinNotAvailable Show="true"/>
+            <WarnInputFieldEmpty Show="true"/>
+            <WarnModificationTimeError Show="true"/>
+            <WarnDependentFolderPair Show="true"/>
+            <WarnDependentBaseFolders Show="true"/>
+            <WarnDirectoryLockFailed Show="true"/>
+            <WarnVersioningFolderPartOfSync Show="true"/>
+        </OptionalDialogs>
+    </General>
+    <Gui>
+        <MainDialog Width="1860" Height="1098" PosX="69" PosY="-9" Maximized="true">
+            <SearchPanel CaseSensitive="false"/>
+            <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Last" SortAscending="false">
+                <Columns>
+                    <Item Type="Name" Visible="true" Width="-161" Stretch="1"/>
+                    <Item Type="Last" Visible="true" Width="98" Stretch="0"/>
+                    <Item Type="Log" Visible="true" Width="63" Stretch="0"/>
+                </Columns>
+                <Configurations MaxSize="100">
+                    <Item Result="Success" Config="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\LastRun.ffs_gui" LastSync="1589050813" Log="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\Logs\[最后会话] 2020-05-10 030013.396.html" Color="DDDDDD"/>
+                    <Item Result="Success" Config="D:\Google 云端硬盘\资料\40 软件数据备份\FreeFileSync\Sync长期维护文件.ffs_gui" LastSync="1592990359" Log="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\Logs\Sync长期维护文件 2020-06-24 171919.789.html" Color="F2CBFF"/>
+                </Configurations>
+                <LastUsed>
+                    <Item>D:\Google 云端硬盘\资料\40 软件数据备份\FreeFileSync\Sync长期维护文件.ffs_gui</Item>
+                </LastUsed>
+            </ConfigPanel>
+            <OverviewPanel ShowPercentage="true" SortByColumn="Bytes" SortAscending="false">
+                <Columns>
+                    <Item Type="Tree" Visible="true" Width="-36" Stretch="1"/>
+                    <Item Type="Count" Visible="true" Width="90" Stretch="0"/>
+                    <Item Type="Bytes" Visible="true" Width="90" Stretch="0"/>
+                </Columns>
+            </OverviewPanel>
+            <FilePanel ShowIcons="true" IconSize="Small" SashOffset="8" FolderPairsMax="6">
+                <ColumnsLeft PathFormat="Relative">
+                    <Item Type="Path" Visible="true" Width="-113" Stretch="1"/>
+                    <Item Type="Ext" Visible="false" Width="90" Stretch="0"/>
+                    <Item Type="Date" Visible="false" Width="165" Stretch="0"/>
+                    <Item Type="Size" Visible="true" Width="113" Stretch="0"/>
+                </ColumnsLeft>
+                <FolderHistoryLeft>
+                    <Item>D:/</Item>
+                    <Item>%UserProfile%</Item>
+                </FolderHistoryLeft>
+                <ColumnsRight PathFormat="Relative">
+                    <Item Type="Path" Visible="true" Width="-113" Stretch="1"/>
+                    <Item Type="Ext" Visible="false" Width="90" Stretch="0"/>
+                    <Item Type="Date" Visible="false" Width="165" Stretch="0"/>
+                    <Item Type="Size" Visible="true" Width="113" Stretch="0"/>
+                </ColumnsRight>
+                <FolderHistoryRight>
+                    <Item>[My Reservation]\20 长期维护文件</Item>
+                    <Item>[My Reservation]\21 用户文件夹</Item>
+                </FolderHistoryRight>
+            </FilePanel>
+            <ManualCopyTo KeepRelativePaths="false" OverwriteIfExists="false">
+                <FolderHistory LastUsedPath=""/>
+            </ManualCopyTo>
+            <DefaultViewFilter Equal="false" Conflict="true" Excluded="false">
+                <CategoryView LeftOnly="true" RightOnly="true" LeftNewer="true" RightNewer="true" Different="true"/>
+                <ActionView CreateLeft="true" CreateRight="true" UpdateLeft="true" UpdateRight="true" DeleteLeft="true" DeleteRight="true" DoNothing="true"/>
+            </DefaultViewFilter>
+            <Perspective>layout2|name=CenterPanel;caption=;state=256;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=687;besth=48;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=TopPanel;caption=主工具栏;state=2099708;dir=1;layer=2;row=1;pos=0;prop=100000;bestw=720;besth=62;minw=213;minh=62;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProgressPanel;caption=;state=2097662;dir=1;layer=2;row=2;pos=0;prop=100000;bestw=639;besth=111;minw=-1;minh=111;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=FoldersPanel;caption=文件夹对;state=2099708;dir=1;layer=2;row=3;pos=0;prop=100000;bestw=685;besth=72;minw=-1;minh=98;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SearchPanel;caption=查找;state=2099710;dir=3;layer=2;row=3;pos=0;prop=100000;bestw=300;besth=30;minw=125;minh=30;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LogPanel;caption=日志;state=6293500;dir=3;layer=2;row=2;pos=0;prop=100000;bestw=900;besth=450;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ViewFilterPanel;caption=视图设置;state=2099708;dir=3;layer=2;row=1;pos=0;prop=100000;bestw=588;besth=58;minw=125;minh=58;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ConfigPanel;caption=配置;state=2099196;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=246;besth=68;minw=226;minh=68;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OverviewPanel;caption=摘要;state=2099196;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=450;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=206|dock_size(1,2,1)=73|dock_size(1,2,3)=98|dock_size(3,2,1)=68|dock_size(4,3,0)=452|dock_size(3,2,2)=307|</Perspective>
+        </MainDialog>
+        <DefaultExclusionFilter>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLE?\</Item>
+            <Item>*\desktop.ini</Item>
+            <Item>*\thumbs.db</Item>
+        </DefaultExclusionFilter>
+        <FolderHistory MaxSize="20"/>
+        <VersioningFolderHistory>
+            <Item>G:\90 备份冲突</Item>
+        </VersioningFolderHistory>
+        <LogFolderHistory/>
+        <EmailHistory MaxSize="10"/>
+        <CommandHistory MaxSize="8"/>
+        <ExternalApps>
+            <Item Label="Show in Explorer">explorer.exe /select, "%local_path%" &amp; exit 0</Item>
+            <Item Label="Open with default application">explorer.exe "%local_path%" &amp; exit 0</Item>
+        </ExternalApps>
+        <LastOnlineCheck>1592821380</LastOnlineCheck>
+        <LastOnlineVersion>10.25</LastOnlineVersion>
+    </Gui>
+</FreeFileSync>
