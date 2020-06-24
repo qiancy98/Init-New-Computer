@@ -80,9 +80,7 @@ py -m pip --proxy http://127.0.0.1:10809 install jupyter numpy sympy # scipy mat
 py -m pip --proxy http://127.0.0.1:10809 install wolframclient
 # QQ bot
 py -m pip --proxy http://127.0.0.1:10809 install nonebot xlrd
-# 判断字符集编码
-# 不知道是否系统自带所以先注释
-# py -m pip --proxy http://127.0.0.1:10809 install chardet
+# 判断字符集编码: chardet (python自带)
 
 # Perl配置
 # Perl主要用作LaTeX编译
