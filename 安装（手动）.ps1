@@ -24,9 +24,3 @@
 
 # 需要Windows Defender放行
 & "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\uTorrent.exe"
-
-# FreeFileSync:
-# 	全局设置->勾选“复制锁定文件”
-# 	或者将如下行的false改为true:
-# 	File: %APPDATA%/FreeFileSync
-# 	<CopyLockedFiles Enabled="false"/>

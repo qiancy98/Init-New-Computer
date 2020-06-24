@@ -55,6 +55,12 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 * `-`代表仅需登录
 * 无代表什么都不用做
 
+> FreeFileSync  
+>> 全局设置->勾选“复制锁定文件”  
+>> 或者将如下行的false改为true:  
+>> File: %APPDATA%/FreeFileSync  
+>> `<CopyLockedFiles Enabled="false"/>` 
+
 # 致谢
 | 解决方案 | 项目 | 已用脚本安装？ |
 | - | - | - |
