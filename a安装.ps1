@@ -4,6 +4,9 @@
 # Enter this sentence and run this powershell.
 # Set-ExecutionPolicy Unrestricted -Scope Process
 
+echo "请确认已经打开全局代理^_^"
+pause
+
 Set-ExecutionPolicy AllSigned
 # set HTTP_PROXY=http://localhost:10809
 
@@ -49,11 +52,9 @@ winget install -e --id ChristianSchenk.MiKTeX
 # 需要改名。此处链接也需更改。
 # copy "C:\Program Files\ImageMagick-7.0.10-Q16\convert.exe" "C:\Program Files\ImageMagick-7.0.10-Q16\imgconvert.exe"
 
-# 设置环境变量
-[environment]::SetEnvironmentvariable("Path",[environment]::GetEnvironmentvariable("Path", "User")+";C:\Program Files\Python38\Scripts", "User")
-
 # 刷新环境变量
-RefreshEnv
+# Update-SessionEnvironment # 安装choco后可使用
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 # 复制文件
 Copy-Item ".\其他脚本\安装\msgs" "C:\Program Files\Git\mingw64\share\git-gui\lib\" -recurse
