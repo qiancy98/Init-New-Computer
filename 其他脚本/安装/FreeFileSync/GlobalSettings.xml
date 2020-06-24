@@ -40,8 +40,8 @@
                     <Item Type="Log" Visible="true" Width="63" Stretch="0"/>
                 </Columns>
                 <Configurations MaxSize="100">
-                    <Item Result="Success" Config="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\LastRun.ffs_gui" LastSync="1589050813" Log="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\Logs\[最后会话] 2020-05-10 030013.396.html" Color="DDDDDD"/>
-                    <Item Result="Success" Config="D:\Google 云端硬盘\资料\40 软件数据备份\FreeFileSync\Sync长期维护文件.ffs_gui" LastSync="1592990359" Log="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\Logs\Sync长期维护文件 2020-06-24 171919.789.html" Color="F2CBFF"/>
+                    <Item Result="Success" Config="FFS:\Users\CY Qian\AppData\Roaming\FreeFileSync\LastRun.ffs_gui" LastSync="1589050813" Log="" Color="DDDDDD"/>
+                    <Item Result="Success" Config="D:\Google 云端硬盘\资料\40 软件数据备份\FreeFileSync\Sync长期维护文件.ffs_gui" LastSync="1592990359" Log="" Color="F2CBFF"/>
                 </Configurations>
                 <LastUsed>
                     <Item>D:\Google 云端硬盘\资料\40 软件数据备份\FreeFileSync\Sync长期维护文件.ffs_gui</Item>
@@ -89,7 +89,6 @@
             <Item>\System Volume Information\</Item>
             <Item>\$Recycle.Bin\</Item>
             <Item>\RECYCLE?\</Item>
-            <Item>*\desktop.ini</Item>
             <Item>*\thumbs.db</Item>
         </DefaultExclusionFilter>
         <FolderHistory MaxSize="20"/>
