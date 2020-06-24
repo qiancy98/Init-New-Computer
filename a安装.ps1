@@ -56,17 +56,19 @@ winget install -e --id ChristianSchenk.MiKTeX
 # Update-SessionEnvironment # 安装choco后可使用
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
-# 复制文件
-Copy-Item ".\其他脚本\安装\msgs" "C:\Program Files\Git\mingw64\share\git-gui\lib\" -recurse
-Copy-Item ".\其他脚本\安装\syncing.json" "$env:APPDATA/Code/User"
+# 软件配置 config
+mpm --repository=http://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
+mpm --update
 
-# Git配置
-git config --global user.email "q-young@qq.com"
-git config --global user.name "QianCY"
-git config --global core.editor "code --wait"
-git config --global credential.helper "wincred"
-git config --global gui.encoding "utf-8"
-git config --global gui.tabsize 4
+# 复制文件
+# -recurse 可以用来递归复制; 若目标文件夹不存在, 则创建之.
+Copy-Item ".\其他脚本\安装\Git\zh_cn.msg" "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\" -recurse
+Copy-Item ".\其他脚本\安装\Git\.gitconfig" "$env:USERPROFILE\"
+Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\" -recurse
+Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\" -recurse
+
+# MikTeX配置
+& ".\其他脚本\安装\MiKTeX.ps1"
 
 # Python配置
 py -m pip --proxy http://127.0.0.1:10809 install --upgrade pip # --force-reinstall
