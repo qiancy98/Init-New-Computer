@@ -21,7 +21,7 @@ for root, dirs, files in os.walk("."):
                 string = input.decode(映射对照表.get(判断结果['encoding']))
                 if convert:
                     print(full_name)
-                    with open(full_name,'w', encoding='utf-8') as fout:
+                    with open(full_name,'w', newline='', encoding='utf-8') as fout:
                         fout.write(string)
                 else:
                     print(full_name)
