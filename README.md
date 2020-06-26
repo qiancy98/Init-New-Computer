@@ -67,16 +67,16 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 ## 其他致谢
 - 软件
 	- Latex
-		- [MiKTeX](https://github.com/MiKTeX/miktex)
+		- [MiKTeX/miktex](https://github.com/MiKTeX/miktex)
 		- [latex3/latex3](https://github.com/latex3/latex3)
-		- [VS Code](https://github.com/microsoft/vscode)
-		- [SumatraPDF](https://github.com/sumatrapdfreader/sumatrapdf)
+		- [microsoft/vscode](https://github.com/microsoft/vscode)
+		- [sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)
 	- 软件安装
-		- [Scoop](https://github.com/lukesampson/scoop) 安装绿色软件用(未尝试)
-		- [WinGet](https://github.com/microsoft/winget-cli)
+		- [lukesampson/scoop](https://github.com/lukesampson/scoop) 安装绿色软件用(未尝试)
+		- [microsoft/winget-cli](https://github.com/microsoft/winget-cli)
 	- VPN
 		- [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core)
-		- [V2rayN](https://github.com/2dust/v2rayN)
+		- [2dust/v2rayN](https://github.com/2dust/v2rayN)
 		- [NetchX/Netch](https://github.com/NetchX/Netch)
 	- 其他
 		- [prati0100/git-gui](https://github.com/prati0100/git-gui) (官方的)
