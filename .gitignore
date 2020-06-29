@@ -1,6 +1,8 @@
+*.lnk
+
+# 防止错误复制
 */v2rayN-Core.zip
 */VSCodeUserSetup.exe
-*.lnk
 
 # 以下文件依赖本地复制
 其他脚本/安装/Code/syncing.json

@@ -7,7 +7,7 @@
 echo "请确认已经打开全局代理^_^"
 pause
 
-Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy RemoteSigned
 # set HTTP_PROXY=http://localhost:10809
 
 # 安装winget
@@ -63,12 +63,12 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # -recurse 可以用来递归复制; 若目标文件夹不存在, 则创建之.
 # $env:USERPROFILE = C:\User\<User Name>
 # $env:APPDATA     = C:\User\<User Name>\AppData\Roaming
-Copy-Item ".\其他脚本\安装\Git\zh_cn.msg" "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\" -recurse
-Copy-Item ".\其他脚本\安装\Git\.gitconfig" "$env:USERPROFILE\"
-Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\" -recurse
-Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\" -recurse
-Copy-Item ".\其他脚本\安装\FreeFileSync\*" "$env:APPDATA\FreeFileSync\" -recurse
-Copy-Item "D:\Program Files\~快捷方式\*" "$env:USERPROFILE\Desktop\快捷方式\" -recurse
+Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\" -recurse
+Copy-Item ".\其他脚本\安装\Git\.gitconfig"      "$env:USERPROFILE\"
+Copy-Item ".\其他脚本\安装\Code\syncing.json"   "$env:APPDATA\Code\User\"                              -recurse
+Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\"      -recurse
+Copy-Item ".\其他脚本\安装\FreeFileSync\*"      "$env:APPDATA\FreeFileSync\"                           -recurse
+Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse
 
 # MikTeX配置
 mpm --repository=http://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
