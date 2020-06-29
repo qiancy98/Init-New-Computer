@@ -88,6 +88,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 		- [Dickimaw LaTeX series, volume 2. Using LaTeX to Write a PhD Thesis](https://www.dickimaw-books.com/booklist.php?book_id=16)
 		- [Dickimaw LaTeX series, volume 3. LaTeX for Administrative Work](https://www.dickimaw-books.com/booklist.php?book_id=8)
 		- [CTeX-org/lshort-zh-cn](https://github.com/CTeX-org/lshort-zh-cn) 一份不太简短的LaTeX介绍
+		- [wklchris/Note-by-LaTeX](https://github.com/wklchris/Note-by-LaTeX) LaTeX学习笔记
 		- [yernhi/collection-latex-templates](https://github.com/yernhi/collection-latex-templates) 高校LaTeX模板
 	- 其他
 		- [qinjx/30min_guides](https://github.com/qinjx/30min_guides) 覃健祥的学习笔记(Shell入门)
