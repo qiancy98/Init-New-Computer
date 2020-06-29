@@ -7,7 +7,7 @@
 echo "请确认已经打开全局代理^_^"
 pause
 
-Set-ExecutionPolicy RemoteSigned
+# Set-ExecutionPolicy AllSigned
 # set HTTP_PROXY=http://localhost:10809
 
 # 安装winget
