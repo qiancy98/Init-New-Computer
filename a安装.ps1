@@ -4,7 +4,7 @@
 # Enter this sentence and run this powershell.
 # Set-ExecutionPolicy RemoteSigned -Scope Process
 
-echo "请确认已经打开全局代理^_^"
+Write-Output "请确认已经打开全局代理^_^"
 pause
 
 # Set-ExecutionPolicy AllSigned
@@ -35,7 +35,9 @@ winget install -e --id 7zip.7zip
 
 # 安装诸程序
 winget install -e --id Microsoft.VisualStudioCode
-winget install -e --id Mathpix.MathpixSnippingTool
+Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\"
+
+# winget install -e --id Mathpix.MathpixSnippingTool # 安装时会卡住，故不用
 
 # PDF相关
 winget install -e --id JohnMacFarlane.Pandoc
@@ -44,7 +46,6 @@ winget install -e --id PDFsam.PDFsam
 # 编译器
 winget install -e --id Python.Python
 winget install -e --id StrawberryPerl.StrawberryPerl
-winget install -e --id ChristianSchenk.MiKTeX
 
 # 可选/图片
 # winget install -e --id Inkscape.Inkscape
@@ -63,17 +64,8 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # -recurse 可以用来递归复制; 若目标文件夹不存在, 则创建之.
 # $env:USERPROFILE = C:\User\<User Name>
 # $env:APPDATA     = C:\User\<User Name>\AppData\Roaming
+mkdir "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
 Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\" -recurse
-Copy-Item ".\其他脚本\安装\Git\.gitconfig"      "$env:USERPROFILE\"
-Copy-Item ".\其他脚本\安装\Code\syncing.json"   "$env:APPDATA\Code\User\"                              -recurse
-Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\"      -recurse
-Copy-Item ".\其他脚本\安装\FreeFileSync\*"      "$env:APPDATA\FreeFileSync\"                           -recurse
-Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse
-
-# MikTeX配置
-mpm --repository=http://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
-mpm --update
-& ".\其他脚本\安装\MiKTeX-packages.ps1"
 
 # Python配置
 py -m pip --proxy http://127.0.0.1:10809 install --upgrade pip # --force-reinstall

@@ -1,8 +1,8 @@
 # Encoding: GB2312
 
-# $client = new-object System.Net.WebClient
-# $client.DownloadFile('https://www.rescuetime.com/installers/RescueTimeInstaller.exe','D:\Program Files\~安装包\03 时间管理\RescueTimeInstaller.exe')
-# Start-Process "D:\Program Files\~安装包\03 时间管理\RescueTimeInstaller.exe" -NoNewWindow
+$client = new-object System.Net.WebClient
+$client.DownloadFile('https://mathpix.com/win_app/mathpix_snipping_tool_setup.exe','D:\Program Files\~安装包\41 自动下载\mathpix_snipping_tool_setup.exe')
+Start-Process "D:\Program Files\~安装包\41 自动下载\mathpix_snipping_tool_setup.exe" -NoNewWindow
 
 & "D:\Program Files\~安装包\31 腾讯软件\QQPlayerSetup4.2.4.827.exe" /S
 & "D:\Program Files\~安装包\31 腾讯软件\WeChatSetup.exe" /S
