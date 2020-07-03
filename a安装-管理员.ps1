@@ -65,7 +65,14 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # $env:USERPROFILE = C:\User\<User Name>
 # $env:APPDATA     = C:\User\<User Name>\AppData\Roaming
 mkdir "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
-Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\" -recurse
+Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
+Copy-Item ".\其他脚本\安装\Git\.gitconfig"      "$env:USERPROFILE\"
+mkdir "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
+Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
+Copy-Item ".\其他脚本\安装\FreeFileSync\*"      "$env:APPDATA\FreeFileSync\"                           -recurse
+mkdir "$env:USERPROFILE\Desktop\快捷方式\"
+Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse
+Copy-Item "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\utorrent.lng" "$env:APPDATA\uTorrent\"
 
 # Python配置
 py -m pip --proxy http://127.0.0.1:10809 install --upgrade pip # --force-reinstall
