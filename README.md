@@ -91,6 +91,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
     * [prati0100/git-gui](https://github.com/prati0100/git-gui) (官方的)
     * [sparanoid/7z](https://github.com/sparanoid/7z) 7z汉化
     * [7zip](https://www.7-zip.org/) (外链)
+    * [torakiki/pdfsam](https://github.com/torakiki/pdfsam) 免费PDF切割合并
 * 文档
   * LaTeX
     * [Dickimaw LaTeX series, volume 1. LaTeX for Complete Novices](https://www.dickimaw-books.com/booklist.php?book_id=13)
@@ -99,6 +100,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
     * [CTeX-org/lshort-zh-cn](https://github.com/CTeX-org/lshort-zh-cn) 一份不太简短的LaTeX介绍
     * [wklchris/Note-by-LaTeX](https://github.com/wklchris/Note-by-LaTeX) LaTeX学习笔记
     * [yernhi/collection-latex-templates](https://github.com/yernhi/collection-latex-templates) 高校LaTeX模板
+    * [TeX FAQ](http://www.texfaq.org/) LaTeX常见问题列表
   * 其他
     * [qinjx/30min_guides](https://github.com/qinjx/30min_guides) 覃健祥的学习笔记(Shell入门)
     * [changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial) 欧长坤的书, C++1x教程
