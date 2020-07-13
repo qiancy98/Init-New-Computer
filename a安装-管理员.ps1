@@ -33,7 +33,7 @@ winget install -e --id GnuWin32.Make
 winget install -e --id Git.Git
 winget install -e --id 7zip.7zip
 
-# 安装诸程序
+# 安装VS Code
 winget install -e --id Microsoft.VisualStudioCode
 Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\"
 

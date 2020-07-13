@@ -8,7 +8,7 @@ $client.DownloadFile('https://mathpix.com/win_app/mathpix_snipping_tool_setup.ex
 & "D:\Program Files\~安装包\31 腾讯软件\WeChatSetup.exe" /S
 
 # /S选项有用 但未使用
-& "D:\Program Files\~安装包\31 腾讯软件\QQ9.0.4Trial.exe"
+& "D:\Program Files\~安装包\31 腾讯软件\PCQQ2020.exe"
 
 # /S选项无用
 & "D:\Program Files\~安装包\02 Wolfram编译器\M-WIN-WolframEngine-12.0.1-6478682\setup.exe"
@@ -22,5 +22,5 @@ $client.DownloadFile('https://mathpix.com/win_app/mathpix_snipping_tool_setup.ex
 & "D:\Program Files\~安装包\21 文件云同步\googledrivesync.exe"
 & "D:\Program Files\~安装包\33 微软软件\MicrosoftEdgeSetup.exe"
 
-# 需要Windows Defender放行
+# 需要Windows Defender放行且非常恶心……
 & "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\uTorrent.exe"
