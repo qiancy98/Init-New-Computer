@@ -27,11 +27,14 @@ proxy.off:
 	unset http_proxy
 
 install.jekyll:
-	sudo apt-add-repository ppa:brightbox/ruby-ng
-	sudo apt-get update
-	sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
-	gem update
-	gem install jekyll bundler
+	sudo apt-get install ruby-full build-essential zlib1g-dev -y
+	echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+	echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+	echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+	source ~/.bashrc
+	echo 稍等约十分钟
+	sudo gem update
+	sudo gem install jekyll bundler
 	echo "检查是否已安装完成……"
 	jekyll -v
 
