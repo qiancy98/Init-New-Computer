@@ -92,6 +92,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
     * [sparanoid/7z](https://github.com/sparanoid/7z) 7z汉化
     * [7zip](https://www.7-zip.org/) (外链)
     * [torakiki/pdfsam](https://github.com/torakiki/pdfsam) 免费PDF切割合并
+    * [jekyll/jekyll](https://github.com/jekyll/jekyll) 在[Github Pages](https://docs.github.com/cn/github/working-with-github-pages)中使用
 * 文档
   * LaTeX
     * [Dickimaw LaTeX series, volume 1. LaTeX for Complete Novices](https://www.dickimaw-books.com/booklist.php?book_id=13)
