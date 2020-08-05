@@ -95,13 +95,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
     * [jekyll/jekyll](https://github.com/jekyll/jekyll) 在[Github Pages](https://docs.github.com/cn/github/working-with-github-pages)中使用
 * 文档
   * LaTeX
-    * [Dickimaw LaTeX series, volume 1. LaTeX for Complete Novices](https://www.dickimaw-books.com/booklist.php?book_id=13)
-    * [Dickimaw LaTeX series, volume 2. Using LaTeX to Write a PhD Thesis](https://www.dickimaw-books.com/booklist.php?book_id=16)
-    * [Dickimaw LaTeX series, volume 3. LaTeX for Administrative Work](https://www.dickimaw-books.com/booklist.php?book_id=8)
-    * [CTeX-org/lshort-zh-cn](https://github.com/CTeX-org/lshort-zh-cn) 一份不太简短的LaTeX介绍
-    * [wklchris/Note-by-LaTeX](https://github.com/wklchris/Note-by-LaTeX) LaTeX学习笔记
-    * [yernhi/collection-latex-templates](https://github.com/yernhi/collection-latex-templates) 高校LaTeX模板
-    * [TeX FAQ](http://www.texfaq.org/) LaTeX常见问题列表
+    * 已经挪至[我的GitHub page](https://qiancy98.github.io/programming/programming-others/2020/07/31/%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%E9%9B%86%E5%90%88.html)
   * 其他
     * [qinjx/30min_guides](https://github.com/qinjx/30min_guides) 覃健祥的学习笔记(Shell入门)
     * [changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial) 欧长坤的书, C++1x教程
