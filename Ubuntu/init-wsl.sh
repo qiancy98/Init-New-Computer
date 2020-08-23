@@ -6,10 +6,10 @@ set -x
 # 更新文件
 cp -r -v -u scripts/ ~/
 cp    -v -u makefile ~/
-cp    -v -u scripts/init.cp.aliases.bash_aliases ~/.bash_aliases
+cp    -v -u scripts/init.cp.bash_aliases ~/.bash_aliases
 cp    -v -u scripts/init.cp.wsl.bash_aliases ~/.bash_aliases.WSL
 cp    -v -u scripts/init.cp.gitconfig ~/.gitconfig
-sudo cp -v -u scripts/vimrc /etc/vim/vimrc
+cp    -v -u scripts/vimrc ~/.vimrc
 # stop wsl from belling
 echo "set bell-style none" > ~/.inputrc
 
