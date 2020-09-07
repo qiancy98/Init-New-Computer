@@ -66,9 +66,9 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # $env:APPDATA     = C:\User\<User Name>\AppData\Roaming
 mkdir "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
 Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
-Copy-Item ".\其他脚本\安装\Git\win.gitconfig"      "$env:USERPROFILE\.gitconfig"
-mkdir "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
-Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
+Copy-Item ".\其他脚本\安装\Git\win.gitconfig"   "$env:USERPROFILE\.gitconfig"
+# mkdir "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
+# Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
 Copy-Item ".\其他脚本\安装\FreeFileSync\*"      "$env:APPDATA\FreeFileSync\"                           -recurse
 mkdir "$env:USERPROFILE\Desktop\快捷方式\"
 Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse

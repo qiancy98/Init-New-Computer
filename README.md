@@ -87,6 +87,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
     * [v2ray/v2ray-core](https://github.com/v2ray/v2ray-core)
     * [2dust/v2rayN](https://github.com/2dust/v2rayN)
     * [NetchX/Netch](https://github.com/NetchX/Netch)
+    * [Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
   * 其他
     * [prati0100/git-gui](https://github.com/prati0100/git-gui) (官方的)
     * [sparanoid/7z](https://github.com/sparanoid/7z) 7z汉化
