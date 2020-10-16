@@ -96,7 +96,7 @@ The files in [常用软件](常用软件/) folder obey their original license. I
     * [jekyll/jekyll](https://github.com/jekyll/jekyll) 在[Github Pages](https://docs.github.com/cn/github/working-with-github-pages)中使用
 * 文档
   * LaTeX
-    * 已经挪至[我的GitHub page](https://qiancy98.github.io/programming/programming-others/2020/07/31/%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%E9%9B%86%E5%90%88.html)
+    * 已经挪至[我的GitHub page](https://qiancy98.github.io/programming/programming-others/2020/08/05/%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%E9%9B%86%E5%90%88.html)
   * 其他
     * [qinjx/30min_guides](https://github.com/qinjx/30min_guides) 覃健祥的学习笔记(Shell入门)
     * [changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial) 欧长坤的书, C++1x教程
