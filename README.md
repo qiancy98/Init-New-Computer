@@ -77,6 +77,8 @@ The files in [常用软件](常用软件/) folder obey their original license. I
 * 软件
   * Latex
     * [MiKTeX/miktex](https://github.com/MiKTeX/miktex)
+      * [清华大学开源镜像下载: MiKTeX](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/win32/miktex/setup/)
+      * [中科大开源镜像下载: MiKTeX](http://mirrors.ustc.edu.cn/CTAN/systems/win32/miktex/setup/)
     * [latex3/latex3](https://github.com/latex3/latex3)
     * [microsoft/vscode](https://github.com/microsoft/vscode)
     * [sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)
