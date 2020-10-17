@@ -22,5 +22,6 @@ $client.DownloadFile('https://mathpix.com/win_app/mathpix_snipping_tool_setup.ex
 & "D:\Program Files\~安装包\21 文件云同步\googledrivesync.exe"
 & "D:\Program Files\~安装包\33 微软软件\MicrosoftEdgeSetup.exe"
 
-# 需要Windows Defender放行且非常恶心……
-& "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\uTorrent.exe"
+# 3.5.5需要Windows Defender放行且非常恶心……
+# 暂换成2.0.4
+& "D:\Program Files\~安装包\22 文件下载 μTorrent\2.0.4\uTorrent.exe"
