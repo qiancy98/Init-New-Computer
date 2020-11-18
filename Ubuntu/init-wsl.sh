@@ -24,8 +24,7 @@ sudo apt-get install language-pack-zh-hans --assume-yes --quiet
 sudo update-locale LANG=zh_CN.UTF-8
 
 # latex
-sudo apt-get install texlive texlive-xelatex latexmk texlive-extra-utils texlive-lang-chinese --assume-yes --quiet
-	# dependence: texlive-extra-utils FOR texliveonfly
+sh ./scripts/MiKTeX/install.sh
 
 # Python
 sudo apt-get install python3 python3-pip python-is-python3 --assume-yes --quiet
