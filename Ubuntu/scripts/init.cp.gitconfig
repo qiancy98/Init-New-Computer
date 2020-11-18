@@ -11,7 +11,3 @@
 	tabsize = 4
 [gc]
 	bigPackThreshold = 10m
-[http "https://github.com"]
-	proxy = http://127.0.0.1:10809
-[https "https://github.com"]
-	proxy = http://127.0.0.1:10809
