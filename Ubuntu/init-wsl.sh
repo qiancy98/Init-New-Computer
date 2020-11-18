@@ -4,18 +4,18 @@ set -x
 
 
 # 更新文件
-cp -r -v -u scripts/ ~/
-cp    -v -u makefile ~/
-cp    -v -u scripts/init.cp.bash_aliases ~/.bash_aliases
-cp    -v -u scripts/init.cp.wsl.bash_aliases ~/.bash_aliases.WSL
-cp    -v -u scripts/init.cp.gitconfig ~/.gitconfig
-cp    -v -u scripts/vimrc ~/.vimrc
+cp --recursive --verbose --update scripts/ ~/
+cp             --verbose --update makefile ~/
+cp             --verbose --update scripts/init.cp.bash_aliases ~/.bash_aliases
+cp             --verbose --update scripts/init.cp.wsl.bash_aliases ~/.bash_aliases.WSL
+cp             --verbose --update scripts/init.cp.gitconfig ~/.gitconfig
+cp             --verbose --update scripts/vimrc ~/.vimrc
 # stop wsl from belling
 echo "set bell-style none" > ~/.inputrc
 
 
 # Update source
-sudo cp -v -u scripts/init.cp.sources.list.$(lsb_release -cs) /etc/apt/sources.list
+sudo cp --verbose scripts/init.cp.sources.list.$(lsb_release -cs) /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get upgrade --assume-yes --quiet --with-new-pkgs --auto-remove
 
@@ -35,8 +35,8 @@ sudo apt-get install python3-scipy python3-matplotlib jupyter --assume-yes --qui
 sudo apt-get install g++ gdb --assume-yes --quiet
 
 
-# Windows交互文件夹. 当文件夹存在时，-p抑制报错。
-mkdir -p ~/files
+# Windows交互文件夹. 当文件夹存在时，--parents抑制报错。
+mkdir --parents ~/files
 
 
 # 这些是虚拟机中用的程序
