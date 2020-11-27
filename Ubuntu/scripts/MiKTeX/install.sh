@@ -7,3 +7,7 @@ sudo apt-get update
 sudo apt-get install miktex --assume-yes
 miktexsetup finish
 initexmf --set-config-value [MPM]AutoInstall=1
+# 创建硬链接，这样Windows中就可以直接使用。
+sudo ln ~/bin/latexmk /usr/local/bin/
+sudo ln ~/bin/xelatex /usr/local/bin/
+sudo ln ~/bin/bibtex  /usr/local/bin/
