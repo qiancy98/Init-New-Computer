@@ -24,7 +24,7 @@ sudo apt-get install language-pack-zh-hans --assume-yes --quiet
 sudo update-locale LANG=zh_CN.UTF-8
 
 # latex
-sh ./scripts/init.apk.MiKTeX.sh
+bash ./scripts/init.apk.MiKTeX.sh
 
 # Python
 sudo apt-get install python3 python3-pip python-is-python3 --assume-yes --quiet

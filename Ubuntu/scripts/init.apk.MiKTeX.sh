@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 # 运行命令前打印
 set -x
 
