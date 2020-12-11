@@ -4,29 +4,26 @@ help:
 	@echo "$(Help)"
 endif
 
-Help += \n**cpp.mk**\n	.c	compile\n	.r	run\n	.t	run & show time\n	.a	run & open the output\n	.graph	compile & run (with \"matplotlibcpp.h\")\n	clean.cpp	Clean c++ compile files.\n
+Help += \n**cpp.mk**\n	*	compile\n	*.t	run & show time\n	*.a	run & open the output\n	*.graph	compile & run (with \"matplotlibcpp.h\")\n	clean.cpp	Clean c++ compile files.\n
 
 ####################
 
 Input = $(if $(wildcard $*.in),< $*.in)
 
 #.PHONY:%.r %.o %.t %.T
-%.t:%.c
+%.t:%
 	time -f "%e s  %M KB" ./$* $(Input)
 #	Time, Memory.
 
-%.T:%.c
+%.T:%
 	time -p ./$* $(Input)
 #	-p:basic	-v:full
 
-%.a:%.c
+%.a:%
 	./$* $(Input) > $*.out
-	gedit $*.out
+	code $*.out
 
-%.r:%.c
-	./$* $(Input)
-
-%.c:%.cpp
+%:%.cpp
 	g++ $< -o $* -Wall -Wextra -Wconversion
 
 %.graph:%.cpp
