@@ -9,7 +9,7 @@ cp             --verbose --update makefile ~/
 cp             --verbose --update scripts/init.cp.bash_aliases ~/.bash_aliases
 cp             --verbose --update scripts/init.cp.wsl.bash_aliases ~/.bash_aliases.WSL
 cp             --verbose --update scripts/init.cp.gitconfig ~/.gitconfig
-cp             --verbose --update scripts/vimrc ~/.vimrc
+cp             --verbose --update scripts/.vimrc ~/.vimrc
 # stop wsl from belling
 echo "set bell-style none" > ~/.inputrc
 
