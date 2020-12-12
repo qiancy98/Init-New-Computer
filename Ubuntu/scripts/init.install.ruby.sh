@@ -10,4 +10,4 @@ source ~/.bashrc
 gem install jekyll bundler
 # 用来使yekyll支持UTF+8编码.
 s=$(ruby -v)
-sudo cp --verbose filehandler.rb /usr/lib/ruby/${s:5:5}/webrick/httpservlet/filehandler.rb
+sudo cp --verbose init.install.ruby.filehandler.rb /usr/lib/ruby/${s:5:5}/webrick/httpservlet/filehandler.rb

@@ -23,8 +23,8 @@ sudo apt-get upgrade --assume-yes --quiet --with-new-pkgs --auto-remove
 sudo apt-get install language-pack-zh-hans --assume-yes --quiet
 sudo update-locale LANG=zh_CN.UTF-8
 
-# latex
-bash ./scripts/init.apk.MiKTeX.sh
+# LaTeX
+bash ./scripts/init.install.MiKTeX.sh
 
 # Python
 sudo apt-get install python3 python3-pip python-is-python3 --assume-yes --quiet
@@ -34,6 +34,8 @@ sudo apt-get install python3-scipy python3-matplotlib jupyter --assume-yes --qui
 # C++
 sudo apt-get install g++ gdb --assume-yes --quiet
 
+# Jekyll
+cd scripts/ && bash init.install.ruby.sh
 
 # Windows交互文件夹. 当文件夹存在时，--parents抑制报错。
 mkdir --parents ~/files
