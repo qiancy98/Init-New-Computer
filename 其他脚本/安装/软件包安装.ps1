@@ -7,6 +7,9 @@ $client.DownloadFile('https://mathpix.com/win_app/mathpix_snipping_tool_setup.ex
 & "D:\Program Files\~安装包\31 腾讯软件\QQPlayerSetup4.2.4.827.exe" /S
 & "D:\Program Files\~安装包\31 腾讯软件\WeChatSetup.exe" /S
 
+# MSI文件，用quiet表示静默安装，用passive表示无人值守安装
+& "D:\Program Files\~安装包\33 微软软件\wsl_update_x64.msi" /passive
+
 # /S选项有用 但未使用
 & "D:\Program Files\~安装包\31 腾讯软件\PCQQ2020.exe"
 
