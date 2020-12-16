@@ -1,0 +1,1 @@
+New-Item -Path 'D:\Google 云端硬盘\资料\33 常用软件\其他脚本\全局路径文件夹\SumatraPDF.exe' -ItemType SymbolicLink -Value 'D:\Program Files\PDF相关\SumatraPDF-3.2-64\SumatraPDF-3.2-64.exe'
