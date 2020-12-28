@@ -9,8 +9,8 @@ sudo apt-get install miktex --assume-yes
 miktexsetup finish
 initexmf --set-config-value [MPM]AutoInstall=1
 
-# 创建硬链接，这样Windows中就可以直接使用。
-sudo ln ~/bin/latexmk /usr/local/bin/
-sudo ln ~/bin/xelatex /usr/local/bin/
-sudo ln ~/bin/bibtex  /usr/local/bin/
-sudo ln ~/bin/xdvipdfmx  /usr/local/bin/
+# 创建软链接，这样Windows中就可以直接使用。
+sudo ln --symbolic ~/bin/latexmk /usr/local/bin/
+sudo ln --symbolic ~/bin/xelatex /usr/local/bin/
+sudo ln --symbolic ~/bin/bibtex  /usr/local/bin/
+sudo ln --symbolic ~/bin/xdvipdfmx  /usr/local/bin/
