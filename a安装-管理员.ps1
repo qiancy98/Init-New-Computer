@@ -24,7 +24,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
 # dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 # dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-wsl --set-default-version 2
+New-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\RunOnce -Name "SetWSLVersion" -PropertyType String -Value "wsl --set-default-version 2"
 
 # 更新帮助
 Update-Help
@@ -35,7 +35,7 @@ winget install -e --id Git.Git
 winget install -e --id 7zip.7zip
 
 # 安装VS Code
-winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id  Microsoft.VisualStudioCode-User-x64
 Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\"
 
 # winget install -e --id Mathpix.MathpixSnippingTool # 安装时会卡住，故不用
@@ -59,6 +59,7 @@ winget install -e --id StrawberryPerl.StrawberryPerl
 # 软件配置 config
 # 刷新环境变量
 # Update-SessionEnvironment # 安装choco后可使用
+[System.Environment]::SetEnvironmentVariable("Path", [System.Environment]::GetEnvironmentVariable("Path","User") + ";D:\Google 云端硬盘\资料\33 常用软件\其他脚本\全局路径文件夹", "User")
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 # 复制文件
