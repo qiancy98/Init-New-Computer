@@ -82,8 +82,6 @@ py -m pip --proxy http://127.0.0.1:10809 install jupyter numpy sympy # scipy mat
 # Wolfram
 # ref: https://reference.wolfram.com/language/WolframClientForPython/docpages/install.html
 py -m pip --proxy http://127.0.0.1:10809 install wolframclient
-# QQ bot
-py -m pip --proxy http://127.0.0.1:10809 install nonebot xlrd
 # ÅĞ¶Ï×Ö·û¼¯±àÂë: chardet (python×Ô´ø)
 
 # PerlÅäÖÃ
