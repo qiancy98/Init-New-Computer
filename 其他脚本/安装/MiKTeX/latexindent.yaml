@@ -1,0 +1,19 @@
+#  verbatim environments specified 
+#  in this field will not be changed at all!
+verbatimEnvironments:
+    tikzpicture: 1
+
+# name of code blocks that should have their body aligned at ampersand delimiters
+lookForAlignDelims:
+   align: 
+      delims: 1
+      alignDoubleBackSlash: 0
+   align*: 
+      delims: 1
+      alignDoubleBackSlash: 0
+
+# if you have indent rules for particular code blocks
+# then you can populate them in indentRules; for example, you might just want 
+# to use a space " " or maybe a double tab "\t\t"
+indentRules:
+   item: "\t"
