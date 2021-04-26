@@ -8,6 +8,8 @@ sudo apt-get update
 sudo apt-get install miktex --assume-yes
 miktexsetup finish
 initexmf --set-config-value [MPM]AutoInstall=1
+initexmf --register-root="/mnt/d/Google 云端硬盘/资料/30 Latex/全局可见宏包"
+initexmf --update-fndb
 
 # 创建软链接，这样Windows中就可以直接使用。
 sudo ln --symbolic ~/bin/latexmk /usr/local/bin/
