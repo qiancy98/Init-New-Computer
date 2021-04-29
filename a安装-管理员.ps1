@@ -11,7 +11,7 @@ pause
 # set HTTP_PROXY=http://localhost:10809
 
 # 安装winget
-& "D:\Program Files\~安装包\33 微软软件\winget v0.1.appxbundle"
+& "D:\Program Files\~安装包\33 微软软件\winget v0.3.appxbundle"
 
 # 软件包安装
 & ".\其他脚本\安装\软件包安装.ps1"
