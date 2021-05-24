@@ -11,7 +11,7 @@ pause
 # set HTTP_PROXY=http://localhost:10809
 
 # 安装winget
-& "D:\Program Files\~安装包\33 微软软件\winget v0.3.appxbundle"
+& "D:\Program Files\~安装包\33 微软软件\winget v0.4.appxbundle"
 
 # 软件包安装
 & ".\其他脚本\安装\软件包安装.ps1"
@@ -35,14 +35,15 @@ winget install -e --id Git.Git
 winget install -e --id 7zip.7zip
 
 # 安装VS Code
-winget install -e --id  Microsoft.VisualStudioCode-User-x64
-Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\"
+winget install -e --id  Microsoft.VisualStudioCode
+# Copy-Item ".\其他脚本\安装\Code\syncing.json" "$env:APPDATA\Code\User\"
 
 # winget install -e --id Mathpix.MathpixSnippingTool # 安装时会卡住，故不用
 
 # PDF相关
 winget install -e --id JohnMacFarlane.Pandoc
 winget install -e --id PDFsam.PDFsam
+winget install -e --id TikzEdt.TikzEdtBeta
 
 # 编译器
 winget install -e --id Python.Python
@@ -77,12 +78,13 @@ Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方
 Copy-Item "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\utorrent.lng" "$env:APPDATA\uTorrent\"
 
 # Python配置
-py -m pip --proxy http://127.0.0.1:10809 install --upgrade pip # --force-reinstall
+py -m pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
+py -m pip install --upgrade pip # --force-reinstall
 # Jupyter
-py -m pip --proxy http://127.0.0.1:10809 install jupyter numpy sympy # scipy matplotlib
+py -m pip install jupyter numpy sympy # scipy matplotlib
 # Wolfram
 # ref: https://reference.wolfram.com/language/WolframClientForPython/docpages/install.html
-py -m pip --proxy http://127.0.0.1:10809 install wolframclient
+py -m pip install wolframclient
 # 判断字符集编码: chardet (python自带)
 
 # Perl配置
