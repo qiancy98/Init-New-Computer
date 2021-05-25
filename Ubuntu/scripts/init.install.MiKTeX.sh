@@ -16,3 +16,4 @@ sudo ln --symbolic ~/bin/latexmk /usr/local/bin/
 sudo ln --symbolic ~/bin/xelatex /usr/local/bin/
 sudo ln --symbolic ~/bin/bibtex  /usr/local/bin/
 sudo ln --symbolic ~/bin/xdvipdfmx  /usr/local/bin/
+sudo ln --symbolic ~/bin/extractbb  /usr/local/bin/
