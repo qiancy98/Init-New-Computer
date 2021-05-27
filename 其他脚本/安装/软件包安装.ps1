@@ -27,3 +27,7 @@ $client.DownloadFile('https://mathpix.com/win_app/mathpix_snipping_tool_setup.ex
 # 3.5.5需要Windows Defender放行且非常恶心……
 # 暂换成2.0.4
 & "D:\Program Files\~安装包\22 文件下载 μTorrent\2.0.4\uTorrent.exe"
+
+# 未尝试
+& "D:\Program Files\~安装包\20 即时信息交互\TencentMeeting_0300000000_2.0.0.459.publish.exe"
+& "D:\Program Files\~安装包\20 即时信息交互\ZoomInstaller.exe"
