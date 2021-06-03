@@ -43,7 +43,7 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 | 31         | -           | 野狐围棋     |
 | WinGet     | -           | VS Code      |
 | WinGet     | 已内置      | MikTeX       |
-| 应用商店   | +           | Ubuntu       |
+| 应用商店   | 已内置       | Ubuntu       |
 | 便携软件   | 开机自启    | V2ray        |
 | 便携软件   | 设为默认    | SumatraPDF   |
 
@@ -53,13 +53,14 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 * `-`代表仅需登录
 * 无代表什么都不用做
 
-<!--
-> FreeFileSync  
->> 全局设置->勾选“复制锁定文件”  
->> 或者将如下行的false改为true:  
->> File: %APPDATA%/FreeFileSync  
->> `<CopyLockedFiles Enabled="false"/>` 
- -->
+配置方案：
+
+| 软件名 | 方法 |
+| - | - |
+| QQ | 安装时修改数据目录 |
+| 微信 | 设置中修改数据目录 |
+| QQ音乐 | 设置中修改缓存目录 |
+| FreeFileSync | 默认以管理员身份启动 |
 
 ## 致谢
 
