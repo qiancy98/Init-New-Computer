@@ -76,13 +76,17 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 ### 其他致谢
 
 * 软件
+  * 编辑器、阅读器
+    * [vim/vim](https://github.com/vim/vim)
+    * [microsoft/vscode](https://github.com/microsoft/vscode)
+    * [sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)
   * Latex
     * [MiKTeX/miktex](https://github.com/MiKTeX/miktex)
       * [清华大学开源镜像下载: MiKTeX](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/win32/miktex/setup/)
       * [中科大开源镜像下载: MiKTeX](http://mirrors.ustc.edu.cn/CTAN/systems/win32/miktex/setup/)
     * [latex3/latex3](https://github.com/latex3/latex3)
-    * [microsoft/vscode](https://github.com/microsoft/vscode)
-    * [sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)
+    * [jlaurens/synctex](https://github.com/jlaurens/synctex)
+    * [cmhughes/latexindent.pl](https://github.com/cmhughes/latexindent.pl)
   * 软件安装
     * [lukesampson/scoop](https://github.com/lukesampson/scoop) 安装绿色软件用(未尝试)
     * [microsoft/winget-cli](https://github.com/microsoft/winget-cli)
