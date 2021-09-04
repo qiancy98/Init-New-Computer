@@ -11,7 +11,7 @@ pause
 # set HTTP_PROXY=http://localhost:10809
 
 # 安装winget
-& "D:\Program Files\~安装包\33 微软软件\winget v0.4.appxbundle"
+& "D:\Program Files\~安装包\33 微软软件\winget v1.0.appxbundle"
 
 # 软件包安装
 & ".\其他脚本\安装\软件包安装.ps1"
@@ -49,6 +49,9 @@ winget install -e --id TikzEdt.TikzEdtBeta
 winget install -e --id Python.Python
 winget install -e --id StrawberryPerl.StrawberryPerl
 
+# 文件云同步
+winget install -e --id Nutstore.Nutstore
+
 # 可选/图片
 # winget install -e --id Inkscape.Inkscape
 # winget install -e --id ImageMagick.ImageMagick
@@ -60,7 +63,7 @@ winget install -e --id StrawberryPerl.StrawberryPerl
 # 软件配置 config
 # 刷新环境变量
 # Update-SessionEnvironment # 安装choco后可使用
-[System.Environment]::SetEnvironmentVariable("Path", [System.Environment]::GetEnvironmentVariable("Path","User") + ";D:\Google 云端硬盘\资料\33 常用软件\其他脚本\全局路径文件夹", "User")
+[System.Environment]::SetEnvironmentVariable("Path", [System.Environment]::GetEnvironmentVariable("Path","User") + ";D:\Program Files\全局路径文件夹", "User")
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
 # 复制文件
@@ -70,12 +73,11 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 mkdir "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
 Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
 Copy-Item ".\其他脚本\安装\Git\win.gitconfig"   "$env:USERPROFILE\.gitconfig"
-# mkdir "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
-# Copy-Item ".\其他脚本\安装\Jupyter\kernel.json" "$env:APPDATA\jupyter\kernels\wolframlanguage12\"
+Copy-Item ".\其他脚本\安装\Miktex\indentconfig.yaml" "$env:USERPROFILE\"
 Copy-Item ".\其他脚本\安装\FreeFileSync\*"      "$env:APPDATA\FreeFileSync\"                           -recurse
 mkdir "$env:USERPROFILE\Desktop\快捷方式\"
 Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse
-Copy-Item "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\utorrent.lng" "$env:APPDATA\uTorrent\"
+# Copy-Item "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\utorrent.lng" "$env:APPDATA\uTorrent\"
 
 # Python配置
 py -m pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
@@ -89,9 +91,5 @@ py -m pip install wolframclient
 
 # Perl配置
 # Perl主要用作LaTeX编译
-cpan Log::Dispatch::File
+# latexindent依赖YAML::Tiny
 cpan YAML::Tiny
-cpan File::HomeDir
-cpan Unicode::GCString
-cpan -Ti Log::Log4perl
-# Will fail 1 test, so have to 'f'orce install. 'T' forbids the tests. 
