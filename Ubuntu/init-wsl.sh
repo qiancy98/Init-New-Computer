@@ -12,6 +12,8 @@ cp             --verbose --update scripts/init.cp.gitconfig ~/.gitconfig
 cp             --verbose --update scripts/.vimrc ~/.vimrc
 # stop wsl from belling
 echo "set bell-style none" > ~/.inputrc
+# Windows交互文件夹. 当文件夹存在时，--parents抑制报错。
+mkdir --parents ~/files
 
 
 # Update source
@@ -23,9 +25,6 @@ sudo apt-get upgrade --assume-yes --quiet --with-new-pkgs --auto-remove
 sudo apt-get install language-pack-zh-hans --assume-yes --quiet
 sudo update-locale LANG=zh_CN.UTF-8
 
-# LaTeX
-bash ./scripts/init.install.MiKTeX.sh
-
 # Python
 sudo apt-get install python3 python3-pip python-is-python3 --assume-yes --quiet
 sudo apt-get install python3-scipy python3-matplotlib jupyter --assume-yes --quiet
@@ -34,13 +33,8 @@ sudo apt-get install python3-scipy python3-matplotlib jupyter --assume-yes --qui
 # C++
 sudo apt-get install g++ gdb --assume-yes --quiet
 
+# LaTeX
+bash ./scripts/init.install.MiKTeX.sh
+
 # Jekyll
 cd scripts/ && bash init.install.ruby.sh
-
-# Windows交互文件夹. 当文件夹存在时，--parents抑制报错。
-mkdir --parents ~/files
-
-
-# 这些是虚拟机中用的程序
-# cd scripts/ && sh init.apk.rescuetime
-# cd scripts/ && sh init.apk.time
