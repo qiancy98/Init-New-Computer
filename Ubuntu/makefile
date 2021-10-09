@@ -17,6 +17,9 @@ daily.apk:
 daily.apk.showmanual:
 	apt-mark showmanual
 
+daily.apk.ca:
+	sudo apt-get install --reinstall ca-certificates
+
 daily.wsl: daily.apk
 	mpm.exe --update &
 
