@@ -93,3 +93,6 @@ py -m pip install wolframclient
 # Perl主要用作LaTeX编译
 # latexindent依赖YAML::Tiny
 cpan YAML::Tiny
+
+# For Windows 11
+# Get-AppxPackage -Name "MicrosoftWindows.Client.WebExperience" -AllUsers | Remove-AppxPackage -AllUsers
