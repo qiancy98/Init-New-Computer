@@ -1,19 +1,81 @@
 #  verbatim environments specified 
 #  in this field will not be changed at all!
+
+# 想要尝试处理tikz，失败。
+# 主要是foreach难以处理
 verbatimEnvironments:
     tikzpicture: 1
 
 # name of code blocks that should have their body aligned at ampersand delimiters
 lookForAlignDelims:
-   align: 
-      delims: 1
-      alignDoubleBackSlash: 0
-   align*: 
-      delims: 1
-      alignDoubleBackSlash: 0
+    align: 
+        delims: 1
+        alignDoubleBackSlash: 0
+        spacesBeforeAmpersand:
+            leadingBlankColumn: 0
+    align*: 
+        delims: 1
+        alignDoubleBackSlash: 0
+        spacesBeforeAmpersand:
+            leadingBlankColumn: 0
+    array:
+        delims: 1
+        alignRowsWithoutMaxDelims: 0
+        alignFinalDoubleBackSlash: 1
+    bordermatrix: 1
+    bordmatrix: 1
+
+# Indent after items, specials and headings
+indentAfterItems:
+    case: 1
 
 # if you have indent rules for particular code blocks
 # then you can populate them in indentRules; for example, you might just want 
 # to use a space " " or maybe a double tab "\t\t"
 indentRules:
-   item: "\t"
+    item: '\t'
+
+# 以下为高级设置，使用-m选项打开。
+# **使用可能有风险**
+modifyLineBreaks:
+    oneSentencePerLine:
+        manipulateSentences: 1
+        sentencesFollow: # 从这里开始找句子
+            other: '\\\]'
+        sentencesBeginWith: # 句子开始的地方
+            other: '\$|\\(?:cite|cref|ref|eqref)'
+        sentencesEndWith: # 句子结尾
+            betterFullStop: 0  # .
+            questionMark: 0     # ?
+            exclamationMark: 0 # !
+            other: '(?<![A-Z])(?<!\\right)(?:\.|!|\?)(?=\s|\n)|\n?%.*'
+    environments:
+        BeginStartsOnOwnLine: 1
+        BodyStartsOnOwnLine: 1
+        EndStartsOnOwnLine: 1
+        EndFinishesWithLineBreak: 1
+        DBSFinishesWithLineBreak: 1
+        equation*:
+            BeginStartsOnOwnLine: 1
+            BodyStartsOnOwnLine: 1
+            EndStartsOnOwnLine: 1
+            EndFinishesWithLineBreak: 1
+    mandatoryArguments:
+        tabular:
+            RCuBFinishesWithLineBreak: 1
+        array:
+            RCuBFinishesWithLineBreak: 1
+        label:
+            RCuBFinishesWithLineBreak: 1
+        bordermatrix:
+            MandArgBodyStartsOnOwnLine: 1
+            RCuBStartsOnOwnLine: 1
+            RCuBFinishesWithLineBreak: 1
+    items:
+        ItemStartsOnOwnLine: 1
+    specialBeginEnd:
+        displayMath:
+            SpecialBeginStartsOnOwnLine: 1
+            SpecialBodyStartsOnOwnLine: 1
+            SpecialEndStartsOnOwnLine: 1
+            SpecialEndFinishesWithLineBreak: 1
