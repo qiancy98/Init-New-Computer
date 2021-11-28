@@ -8,18 +8,18 @@ def transform(s: str) -> str:
 
     忽略注释行的更改。
     """
-    s = re.sub(r"%.*$", r"", s, flags=re.MULTILINE)  # 删除注释
-    s1, s2, s = s.partition(r"\begin{document}")  # 区分导言区
+    s = re.sub(r"(?<!\\)%.*$", r"", s, flags=re.MULTILINE)  # 删除注释
+    s1, s2, s = s.partition(r"\\begin{document}")  # 区分导言区
     if s2 == "":
         return s1  # 没有正文，直接返回
     s = re.sub(r"\n\s*\n", r"\\par{}", s)  # 分段行内化
     s = re.sub(r"\s", r" ", s)  # 删除回车
-    s = re.sub(r"\\\[", r"\\[ ", s)  # 行间公式补充空格
-    s = re.sub(r"\\\]", r" \\]", s)  # 行间公式补充空格
-    s = re.sub(r"\$(.*?)\$", r"$ \1 $", s)  # 行内公式补充空格
-    s = re.sub(r"(\\begin\{.*?\})", r" \1 ", s)  # \begin补充空格
+    s = re.sub(r"(?<!\\)\\\[", r"\\[ ", s)  # 行间公式补充空格
+    s = re.sub(r"(?<!\\)\\\]", r" \\]", s)  # 行间公式补充空格
+    s = re.sub(r"(?<!\\)\$(.+?)(?<!\\)\$", r"$ \1 $", s)  # 行内公式补充空格
+    s = re.sub(r"(?<!\\)(\\begin\{.*?\})", r" \1 ", s)  # \begin补充空格
     s = re.sub(r"\s{2,}", r" ", s)  # 删除多余空格
-    s = re.sub(r"\s*\\par\{\}\s*", r"\n\n", s)  # 分段重新变成行间
+    s = re.sub(r"\s*(?<!\\)\\par\{\}\s*", r"\n\n", s)  # 分段重新变成行间
     s = re.sub(r"\. ", r".\n", s)  # 句号后换行，增强可读性
     return s1 + s2 + s
 
