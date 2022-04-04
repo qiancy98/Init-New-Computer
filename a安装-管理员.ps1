@@ -20,11 +20,8 @@ pause
 Add-WindowsCapability -Online -Name App.WirelessDisplay*
 
 # 安装可选功能: WSL
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
-# dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-# dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-New-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\RunOnce -Name "SetWSLVersion" -PropertyType String -Value "wsl --set-default-version 2"
+# ref: https://docs.microsoft.com/zh-cn/windows/wsl/install
+wsl --install
 
 # 更新帮助
 Update-Help
@@ -93,6 +90,9 @@ py -m pip install wolframclient
 # Perl主要用作LaTeX编译
 # latexindent依赖YAML::Tiny
 cpan YAML::Tiny
+
+# 下次启动时运行
+# New-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\RunOnce -Name "SetWSLVersion" -PropertyType String -Value "wsl --set-default-version 2"
 
 # For Windows 11
 # Get-AppxPackage -Name "MicrosoftWindows.Client.WebExperience" -AllUsers | Remove-AppxPackage -AllUsers
