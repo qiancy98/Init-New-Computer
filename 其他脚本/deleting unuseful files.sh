@@ -2,7 +2,7 @@
 
 # used for deleting latex extra files
 echo "删除额外LaTeX文件"
-file_regex=".*(\.aux|\.bbl|\.blg|\.fls|\.fdb_latexmk|\.log|\.nav|\.out|\.run\.xml|\.snm|\.toc|\.vrb|\.xdv|-blx\.bib|\.bcf)"
+file_regex=".*(\.aux|\.bbl|\.blg|\.fls|\.fdb_latexmk|\.log|\.nav|\.out|\.run\.xml|\.snm|\.toc|\.vrb|\.xdv|-blx\.bib|\.bcf|\.dvi)"
 file_not_regex=".*program.*"
 # |synctex\.gz
 
