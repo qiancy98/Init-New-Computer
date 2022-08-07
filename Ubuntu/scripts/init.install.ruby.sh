@@ -19,12 +19,13 @@ export PATH="$HOME/gems/bin:$PATH"
 # 安装jekyll
 gem install jekyll bundler
 
-# 用来使yekyll支持UTF+8编码.
+# 用来使jekyll支持UTF+8编码.
 s=$(ruby -v)
 sudo cp --verbose init.install.ruby.filehandler.rb /usr/lib/ruby/${s:5:5}/webrick/httpservlet/filehandler.rb
 
 # 更换bundle源
-bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+# 已经在"14\ 个人网页"中配置过了
+# bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 
 # 编译网页以更至最新
 echo "更新Ruby中，稍等约10分钟……"
