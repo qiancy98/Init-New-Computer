@@ -9,9 +9,5 @@
 	tabsize = 4
 [gc]
 	bigPackThreshold = 10m
-[http "https://github.com"]
-	proxy = socks5://localhost:10808
-[https "https://github.com"]
-	proxy = socks5://localhost:10808
 [merge]
 	ff = false

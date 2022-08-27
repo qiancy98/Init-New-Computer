@@ -4,3 +4,5 @@ alias GeneratePassword="python '/mnt/d/Google 云端硬盘/资料/33 常用软�
 alias python=python3
 alias pip=pip3
 alias upd="cd ~ && time make daily.apk"
+alias proxy="source ~/scripts/set-proxy.sh"
+. ~/scripts/set-proxy.sh set
