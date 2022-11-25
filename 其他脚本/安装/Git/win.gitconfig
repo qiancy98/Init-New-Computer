@@ -12,8 +12,10 @@
 [gc]
 	bigPackThreshold = 10m
 [http "https://github.com"]
-	proxy = socks5://localhost:10808
+	proxy = http://127.0.0.1:10809
 [https "https://github.com"]
-	proxy = socks5://localhost:10808
+	proxy = http://127.0.0.1:10809
 [merge]
 	ff = false
+[safe]
+	directory = *
