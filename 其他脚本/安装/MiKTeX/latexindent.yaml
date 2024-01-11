@@ -38,17 +38,17 @@ indentRules:
 # 以下为高级设置，使用-m选项打开。
 # **使用可能有风险**
 modifyLineBreaks:
-    oneSentencePerLine:
-        manipulateSentences: 1
-        sentencesFollow: # 从这里开始找句子
-            other: '\\\]'
-        sentencesBeginWith: # 句子开始的地方
-            other: '\$|\\(?:cite|cref|ref|eqref)'
-        sentencesEndWith: # 句子结尾
-            betterFullStop: 0  # .
-            questionMark: 0     # ?
-            exclamationMark: 0 # !
-            other: '(?<![A-Z])(?<!\\right)(?:\.|!|\?)(?=\s|\n)|\n?%.*'
+    # oneSentencePerLine:
+    #     manipulateSentences: 1
+    #     sentencesFollow: # 从这里开始找句子
+    #         other: '\\\]'
+    #     sentencesBeginWith: # 句子开始的地方
+    #         other: '\$|\\(?:cite|cref|ref|eqref)'
+    #     sentencesEndWith: # 句子结尾
+    #         betterFullStop: 0  # .
+    #         questionMark: 0     # ?
+    #         exclamationMark: 0 # !
+    #         other: '(?<![A-Z])(?<!\\right)(?:\.|!|\?)(?=\s|\n)|\n?%.*'
     environments:
         BeginStartsOnOwnLine: 1
         BodyStartsOnOwnLine: 1

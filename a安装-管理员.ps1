@@ -11,7 +11,9 @@ pause
 # set HTTP_PROXY=http://localhost:10809
 
 # 软件包安装
-#& ".\其他脚本\安装\软件包安装.ps1"
+# & ".\其他脚本\安装\软件包安装.ps1"
+& "D:\Program Files\~安装包\23 数据备份 FreeFileSync\FreeFileSync_13.2_Windows_Setup.exe"
+& "D:\Program Files\~安装包\31 腾讯软件\QQ9.9.1.15820_x64.exe"
 
 # 安装可选功能: 无线显示器
 Add-WindowsCapability -Online -Name App.WirelessDisplay*
@@ -23,28 +25,32 @@ Update-Help
 # ref: https://docs.microsoft.com/zh-cn/windows/wsl/install
 wsl --install
 
-Write-Output "现在，请打开全局代理^_^"
-pause
+# winget 换源
+# https://unicom.mirrors.ustc.edu.cn/help/winget-source.html
+winget source remove winget
+winget source add winget https://mirrors.ustc.edu.cn/winget-source
 
 # 安装GNU程序
 winget install -e --id GnuWin32.Make
-winget install -e --id Git.Git
 winget install -e --id 7zip.7zip
 
 # 安装VS Code
 winget install -e --id  Microsoft.VisualStudioCode
 
-# winget install -e --id Mathpix.MathpixSnippingTool # 安装时会卡住，故不用
+# 安装腾讯软件
+# winget install -e --id Tencent.QQ
+winget install -e --id Tencent.WeChat
+winget install -e --id Tencent.QQMusic
+winget install -e --id Tencent.QQPlayer
+winget install -e --id Tencent.TencentMeeting
 
 # PDF相关
-winget install -e --id JohnMacFarlane.Pandoc
-winget install -e --id PDFsam.PDFsam
 winget install -e --id TikzEdt.TikzEdtBeta
+winget install -e --id Mathpix.MathpixSnippingTool
 
 # 编译器
-winget install -e --id Python.Python.3
+winget install -e --id Python.Python.3.12
 winget install -e --id StrawberryPerl.StrawberryPerl
-winget install -e --id rjpcomputing.luaforwindows
 
 # 文件云同步
 winget install -e --id Nutstore.Nutstore
@@ -56,6 +62,19 @@ winget install -e --id Nutstore.Nutstore
 # 需要改名。此处链接也需更改。
 # copy "C:\Program Files\ImageMagick-7.0.10-Q16\convert.exe" "C:\Program Files\ImageMagick-7.0.10-Q16\imgconvert.exe"
 
+# proxy needed
+Write-Output "现在，请打开全局代理^_^"
+pause
+
+# 安装GNU程序
+winget install -e --id Git.Git
+
+# PDF相关
+winget install -e --id JohnMacFarlane.Pandoc
+winget install -e --id PDFsam.PDFsam
+
+Write-Output "请确认关闭全局代理^_^"
+pause
 
 # 软件配置 config
 # 刷新环境变量
@@ -63,7 +82,6 @@ winget install -e --id Nutstore.Nutstore
 [System.Environment]::SetEnvironmentVariable("Path", [System.Environment]::GetEnvironmentVariable("Path","User") + ";D:\Program Files\全局路径文件夹", "User")
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 New-Item -ItemType SymbolicLink -Path "D:\Program Files\全局路径文件夹" -Name make.exe -Target "C:\Program Files (x86)\GnuWin32\bin\make.exe"
-New-Item -ItemType SymbolicLink -Path "D:\Program Files\全局路径文件夹" -Name lua.exe -Target "C:\Program Files (x86)\Lua\5.1\lua.exe"
 
 # 复制文件
 # -recurse 可以用来递归复制; 若目标文件夹不存在, 则创建之.
