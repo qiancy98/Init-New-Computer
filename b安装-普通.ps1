@@ -4,6 +4,14 @@
 # Enter this sentence and run this powershell.
 # Set-ExecutionPolicy RemoteSigned -Scope Process
 
+Write-Host "当前时间：$(Get-Date)"
+$startTime = Get-Date
+
+# 修改电源设置
+Write-Output "修改电源设置……"
+powercfg /change standby-timeout-ac 0 # 设置电脑不睡眠
+powercfg /change hibernate-timeout-ac 0 # 设置电脑不休眠
+
 # MikTeX配置
 winget install -e --id MiKTeX.MiKTeX
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
@@ -19,3 +27,7 @@ initexmf --register-root="D:\Google 云端硬盘\资料\30 Latex\全局可见宏包"
 initexmf --update-fndb
 # miktex fndb refresh
 Write-Output "MiKTeX: 已完成..."
+
+$endTime = Get-Date
+$duringTime = $endTime - $startTime
+Write-Output "耗时：$($duringTime.TotalMinutes)分钟"

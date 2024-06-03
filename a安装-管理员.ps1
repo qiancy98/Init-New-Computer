@@ -4,15 +4,17 @@
 # Enter this sentence and run this powershell.
 # Set-ExecutionPolicy RemoteSigned -Scope Process
 
+Write-Host "当前时间：$(Get-Date)"
 Write-Output "请确认关闭全局代理^_^"
 pause
+$startTime = Get-Date
 
 # Set-ExecutionPolicy AllSigned
 # set HTTP_PROXY=http://localhost:10809
 
 # 软件包安装
 # & ".\其他脚本\安装\软件包安装.ps1"
-& "D:\Program Files\~安装包\23 数据备份 FreeFileSync\FreeFileSync_13.2_Windows_Setup.exe"
+& "D:\Program Files\~安装包\23 数据备份 FreeFileSync\FreeFileSync_13.1_Windows_Setup.exe"
 & "D:\Program Files\~安装包\31 腾讯软件\QQ9.9.1.15820_x64.exe"
 
 # 安装可选功能: 无线显示器
@@ -30,6 +32,9 @@ wsl --install
 winget source remove winget
 winget source add winget https://mirrors.ustc.edu.cn/winget-source
 
+# 安装Microsoft程序
+winget install -e --id Microsoft.DotNet.DesktopRuntime.6 # vpn软件要用 # 有bug
+
 # 安装GNU程序
 winget install -e --id GnuWin32.Make
 winget install -e --id 7zip.7zip
@@ -43,6 +48,9 @@ winget install -e --id Tencent.WeChat
 winget install -e --id Tencent.QQMusic
 winget install -e --id Tencent.QQPlayer
 winget install -e --id Tencent.TencentMeeting
+
+# 阿里千牛
+winget install --id  Alibaba.AliWorkbench
 
 # PDF相关
 winget install -e --id TikzEdt.TikzEdtBeta
@@ -64,7 +72,15 @@ winget install -e --id Nutstore.Nutstore
 
 # proxy needed
 Write-Output "现在，请打开全局代理^_^"
+& "D:\Program Files\VPN\v2rayN-With-Core\v2rayN.exe"
+$endTime = Get-Date
+$duringTime = $endTime - $startTime
+Write-Output "当前耗时：$($duringTime.TotalMinutes)分钟"
 pause
+$startTime = Get-Date
+
+# 安装Microsoft程序
+winget install -e --id Microsoft.PowerToys
 
 # 安装GNU程序
 winget install -e --id Git.Git
@@ -73,8 +89,12 @@ winget install -e --id Git.Git
 winget install -e --id JohnMacFarlane.Pandoc
 winget install -e --id PDFsam.PDFsam
 
+$endTime = Get-Date
+$duringTime = $endTime - $startTime + $duringTime
+Write-Output "当前耗时：$($duringTime.TotalMinutes)分钟"
 Write-Output "请确认关闭全局代理^_^"
 pause
+$startTime = Get-Date
 
 # 软件配置 config
 # 刷新环境变量
@@ -100,10 +120,14 @@ Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方
 py -m pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
 py -m pip install --upgrade pip # --force-reinstall
 # Jupyter
-py -m pip install jupyter numpy sympy # scipy matplotlib
+# py -m pip install jupyter numpy sympy # scipy matplotlib
+# 重建家园脚本
+# py -m pip install requests
+# gpt-academic
+py -m pip install -r "D:\Program Files\gpt-academic\requirements.txt"
 # Wolfram
 # ref: https://reference.wolfram.com/language/WolframClientForPython/docpages/install.html
-py -m pip install wolframclient
+# py -m pip install wolframclient
 # 判断字符集编码: chardet (python自带)
 
 # Perl配置
@@ -116,3 +140,7 @@ cpan YAML::Tiny
 
 # For Windows 11
 # Get-AppxPackage -Name "MicrosoftWindows.Client.WebExperience" -AllUsers | Remove-AppxPackage -AllUsers
+
+$endTime = Get-Date
+$duringTime = $endTime - $startTime + $duringTime
+Write-Output "总计耗时：$($duringTime.TotalMinutes)分钟"
