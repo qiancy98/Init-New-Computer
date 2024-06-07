@@ -15,7 +15,9 @@ powercfg /change hibernate-timeout-ac 0 # 设置电脑不休眠
 # MikTeX配置
 winget install -e --id MiKTeX.MiKTeX
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-mpm --set-repository=https://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
+# 暂时换成南大镜像
+mpm --set-repository=https://mirrors.nju.edu.cn/CTAN/systems/win32/miktex/tm/packages/
+# mpm --set-repository=https://mirrors.sjtug.sjtu.edu.cn/ctan/systems/win32/miktex/tm/packages/
 Write-Output "MiKTeX: 升级软件包..."
 miktex packages update-package-database
 miktex packages update

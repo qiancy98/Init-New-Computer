@@ -28,6 +28,7 @@ lookForAlignDelims:
 # Indent after items, specials and headings
 indentAfterItems:
     case: 1
+    thmenum: 1
 
 # if you have indent rules for particular code blocks
 # then you can populate them in indentRules; for example, you might just want 
