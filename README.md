@@ -26,26 +26,34 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 
 ## 安装说明
 
-此处描述的是我安装包的放置位置。由于上传Github时忽略了几乎所有安装包，所以大家不必理会。也可在文件[软件包安装.ps1](其他脚本/安装/软件包安装.ps1)中查看(注意此文件编码为GB2312)。
+此处描述的是我安装包的放置位置。由于上传Github时忽略了几乎所有安装包，所以大家不必理会。
 
-| 文件夹编号 | 配置复杂性* | 软件名       |
-| - | - | -  |
-| 02         | -           | Mathematica  |
-| 03         | -           | Rescuetime   |
-| 21         | -           | Google Drive |
-| 22         | -           | uTorrent     |
-| 23         | 已内置      | FreeFileSync |
-| 31         |             | QQ播放器     |
-| 31         | -           | QQ音乐       |
-| 31         | -           | QQ拼音       |
-| 31         | -           | QQ           |
-| 31         | -           | 微信         |
-| 31         | -           | 野狐围棋     |
-| WinGet     | -           | VS Code      |
-| WinGet     | 已内置      | MikTeX       |
-| 应用商店   | 已内置       | Ubuntu       |
-| 便携软件   | 开机自启    | V2ray        |
-| 便携软件   | 设为默认    | SumatraPDF   |
+| 文件夹编号 | 配置复杂性* | 软件名        |
+|-----------|-------------|---------------|
+| 23        | 已内置      | FreeFileSync  |
+| 31        | -           | QQ            |
+| WinGet    |             | Make          |
+| WinGet    |             | 7-Zip         |
+| WinGet    | -           | VS Code       |
+| WinGet    | -           | 微信          |
+| WinGet    | -           | QQ音乐        |
+| WinGet    |             | QQ播放器      |
+| WinGet    | -           | 腾讯会议      |
+| WinGet    | -           | 阿里千牛      |
+| WinGet    |             | TikzEdt       |
+| WinGet    | -           | Mathpix Snipping Tool |
+| WinGet    | 已内置      | Python        |
+| WinGet    | 已内置      | StrawberryPerl|
+| WinGet    | -           | 坚果云        |
+| WinGet    | 已内置      | MikTeX        |
+| WinGet    |             | PowerToys    |
+| WinGet    | 已内置      | Git        |
+| WinGet    |             | Pandoc        |
+| WinGet    |             | PDFsam        |
+| 命令行    | 已内置      | Ubuntu       |
+| 便携软件  |             | V2ray        |
+| 便携软件  |             | SumatraPDF   |
+
 
 配置复杂性：
 
@@ -61,13 +69,16 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 | 微信 | 设置中修改数据目录 |
 | QQ音乐 | 设置中修改缓存目录 |
 | FreeFileSync | 默认以管理员身份启动 |
+| 阿里千牛 | 设置中修改数据目录 |
+| V2ray | 设置开机自启 |
+| SumatraPDF | 设置为默认PDF阅读器 |
+| PowerToys | 需要手动导入设置 |
 
 ## 致谢
 
 | 解决方案 | 项目 | 已用脚本安装？ |
 | - | - | - |
 | Git-Gui汉化 | [stayor/git-gui-zh](https://github.com/stayor/git-gui-zh) | 是 |
-| VS Code同步 | [nonoroazoro/vscode-syncing](https://github.com/nonoroazoro/vscode-syncing) | 否 |
 | MMA与VS Code协同 | [skidvision/wolfram-language](https://github.com/skidvision/wolfram-language) | 否 |
 | MMA与Jupyter协同 | [WolframResearch/WolframLanguageForJupyter](https://github.com/WolframResearch/WolframLanguageForJupyter) | 否 |
 | WeChat图片清理 | [blackboxo/CleanMyWechat](https://github.com/blackboxo/CleanMyWechat) | 免安装 |
@@ -80,6 +91,7 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
     * [vim/vim](https://github.com/vim/vim)
     * [microsoft/vscode](https://github.com/microsoft/vscode)
     * [sumatrapdfreader/sumatrapdf](https://github.com/sumatrapdfreader/sumatrapdf)
+    * [torakiki/pdfsam](https://github.com/torakiki/pdfsam) 免费PDF切割合并
   * Latex
     * [MiKTeX/miktex](https://github.com/MiKTeX/miktex)
       * [清华大学开源镜像下载: MiKTeX](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/win32/miktex/setup/)
@@ -96,14 +108,18 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
     * [NetchX/Netch](https://github.com/NetchX/Netch)
     * [Loyalsoldier/v2ray-rules-dat](https://github.com/Loyalsoldier/v2ray-rules-dat)
   * 其他
+    * [make](https://www.gnu.org/software/make/) (外链)
     * [prati0100/git-gui](https://github.com/prati0100/git-gui) (官方的)
     * [sparanoid/7z](https://github.com/sparanoid/7z) 7z汉化
     * [7zip](https://www.7-zip.org/) (外链)
-    * [torakiki/pdfsam](https://github.com/torakiki/pdfsam) 免费PDF切割合并
     * [jekyll/jekyll](https://github.com/jekyll/jekyll) 在[Github Pages](https://docs.github.com/cn/github/working-with-github-pages)中使用
+    * [microsoft/PowerToys](https://github.com/microsoft/PowerToys) 微软出品的实用工具
+    * [jixiaoyong/ApkSigner](github.com/jixiaoyong/ApkSigner) 签名APK
 * 文档
   * LaTeX
     * 已经挪至[我的GitHub page](https://qiancy98.github.io/programming/programming-others/2020/08/05/%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%E9%9B%86%E5%90%88.html)
   * 其他
     * [qinjx/30min_guides](https://github.com/qinjx/30min_guides) 覃健祥的学习笔记(Shell入门)
     * [changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial) 欧长坤的书, C++1x教程
+* 已弃用
+  * [nonoroazoro/vscode-syncing](https://github.com/nonoroazoro/vscode-syncing) VS Code同步插件 (已弃用, 因为官方插件已经支持)

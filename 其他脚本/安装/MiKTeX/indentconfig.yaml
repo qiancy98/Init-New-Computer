@@ -3,6 +3,5 @@
 # Note that the settings will be read in the order you
 # specify here- each successive settings file will overwrite
 # the variables that you specify
-encoding: GB2312
 paths:
 - D:\Google 云端硬盘\资料\33 常用软件\其他脚本\安装\MiKTeX\latexindent.yaml

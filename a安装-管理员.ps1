@@ -40,7 +40,7 @@ winget install -e --id GnuWin32.Make
 winget install -e --id 7zip.7zip
 
 # 安装VS Code
-winget install -e --id  Microsoft.VisualStudioCode
+winget install -e --id Microsoft.VisualStudioCode
 
 # 安装腾讯软件
 # winget install -e --id Tencent.QQ
@@ -50,7 +50,7 @@ winget install -e --id Tencent.QQPlayer
 winget install -e --id Tencent.TencentMeeting
 
 # 阿里千牛
-winget install --id  Alibaba.AliWorkbench
+winget install -e --id Alibaba.AliWorkbench
 
 # PDF相关
 winget install -e --id TikzEdt.TikzEdtBeta
@@ -105,19 +105,23 @@ New-Item -ItemType SymbolicLink -Path "D:\Program Files\全局路径文件夹" -Name ma
 
 # 复制文件
 # -recurse 可以用来递归复制; 若目标文件夹不存在, 则创建之.
-# $env:USERPROFILE = C:\User\<User Name>
-# $env:APPDATA     = C:\User\<User Name>\AppData\Roaming
+# $env:USERPROFILE  = C:\User\<User Name>
+# $env:APPDATA      = C:\User\<User Name>\AppData\Roaming
+# $env:LOCALAPPDATA = C:\User\<User Name>\AppData\Local
 mkdir "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
 Copy-Item ".\其他脚本\安装\Git\zh_cn.msg"       "C:\Program Files\Git\mingw64\share\git-gui\lib\msgs\"
-Copy-Item ".\其他脚本\安装\Git\win.gitconfig"   "$env:USERPROFILE\.gitconfig"
-Copy-Item ".\其他脚本\安装\Miktex\indentconfig.yaml" "$env:USERPROFILE\"
-Copy-Item ".\其他脚本\安装\FreeFileSync\*"      "$env:APPDATA\FreeFileSync\"                           -recurse
+New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.gitconfig" -Target ".\其他脚本\安装\Git\win.gitconfig"
+New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\indentconfig.yaml" -Target ".\其他脚本\安装\Miktex\indentconfig.yaml"
+mkdir "$env:APPDATA\FreeFileSync\"
+New-Item -ItemType SymbolicLink -Path "$env:APPDATA\FreeFileSync\GlobalSettings.xml" -Target ".\其他脚本\安装\FreeFileSync\GlobalSettings.xml"
+New-Item -ItemType SymbolicLink -Path "$env:APPDATA\FreeFileSync\LastRun.ffs_gui"    -Target ".\其他脚本\安装\FreeFileSync\LastRun.ffs_gui"
 mkdir "$env:USERPROFILE\Desktop\快捷方式\"
 Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse
 # Copy-Item "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\utorrent.lng" "$env:APPDATA\uTorrent\"
 
 # Python配置
 py -m pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple # 临时
 py -m pip install --upgrade pip # --force-reinstall
 # Jupyter
 # py -m pip install jupyter numpy sympy # scipy matplotlib
