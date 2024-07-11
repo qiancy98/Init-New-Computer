@@ -24,6 +24,7 @@ lookForAlignDelims:
         alignFinalDoubleBackSlash: 1
     bordermatrix: 1
     bordmatrix: 1
+    problem: 1
 
 # Indent after items, specials and headings
 indentAfterItems:

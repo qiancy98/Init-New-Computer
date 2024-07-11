@@ -21,13 +21,13 @@ mpm --set-repository=https://mirrors.nju.edu.cn/CTAN/systems/win32/miktex/tm/pac
 Write-Output "MiKTeX: 升级软件包..."
 miktex packages update-package-database
 miktex packages update
-Write-Output "MiKTeX: 安装剩余软件包..."
+# Write-Output "MiKTeX: 安装剩余软件包..."
 # TODO: 文件待更新: ".\其他脚本\安装\MiKTeX-packages.txt"
 # miktex packages require --package-id-file=".\其他脚本\安装\MiKTeX-packages.txt"
 Write-Output "MiKTeX: 添加用户文件夹..."
 initexmf --register-root="D:\Google 云端硬盘\资料\30 Latex\全局可见宏包"
-initexmf --update-fndb
-# miktex fndb refresh
+initexmf --update-fndb # miktex fndb refresh
+initexmf --enable-installer # 自动安装缺失宏包
 Write-Output "MiKTeX: 已完成..."
 
 $endTime = Get-Date
