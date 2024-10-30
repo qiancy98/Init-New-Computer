@@ -33,14 +33,18 @@ winget source remove winget
 winget source add winget https://mirrors.ustc.edu.cn/winget-source
 
 # 安装Microsoft程序
-winget install -e --id Microsoft.DotNet.DesktopRuntime.6 # vpn软件要用 # 有bug
+winget install -e --id Microsoft.DotNet.DesktopRuntime.8 # vpn软件要用 # 有bug
 
 # 安装GNU程序
 winget install -e --id GnuWin32.Make
 winget install -e --id 7zip.7zip
+winget install -e --id mbuilov.sed
 
 # 安装VS Code
 winget install -e --id Microsoft.VisualStudioCode
+
+# 字节跳动
+winget install -e --id ByteDance.Doubao
 
 # 安装腾讯软件
 # winget install -e --id Tencent.QQ
@@ -59,6 +63,7 @@ winget install -e --id Mathpix.MathpixSnippingTool
 # 编译器
 winget install -e --id Python.Python.3.12
 winget install -e --id StrawberryPerl.StrawberryPerl
+# winget install -e --id Anaconda.Miniconda3
 
 # 文件云同步
 winget install -e --id Nutstore.Nutstore
@@ -115,18 +120,22 @@ New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\indentconfig.yaml" -Targ
 mkdir "$env:APPDATA\FreeFileSync\"
 New-Item -ItemType SymbolicLink -Path "$env:APPDATA\FreeFileSync\GlobalSettings.xml" -Target ".\其他脚本\安装\FreeFileSync\GlobalSettings.xml"
 New-Item -ItemType SymbolicLink -Path "$env:APPDATA\FreeFileSync\LastRun.ffs_gui"    -Target ".\其他脚本\安装\FreeFileSync\LastRun.ffs_gui"
+New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.ssh" -Target ".\其他脚本\安装\ssh"
+# Set-Service -Name ssh-agent -StartupType Manual # 设置允许启动ssh-agent
 mkdir "$env:USERPROFILE\Desktop\快捷方式\"
 Copy-Item "D:\Program Files\~快捷方式\*"        "$env:USERPROFILE\Desktop\快捷方式\"                   -recurse
 # Copy-Item "D:\Program Files\~安装包\22 文件下载 μTorrent\3.5.5\utorrent.lng" "$env:APPDATA\uTorrent\"
 
 # Python配置
 py -m pip config set global.index-url https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple
-pip config set global.index-url https://mirrors.aliyun.com/pypi/simple # 临时
+# pip config set global.index-url https://mirrors.aliyun.com/pypi/simple # 临时
 py -m pip install --upgrade pip # --force-reinstall
 # Jupyter
 # py -m pip install jupyter numpy sympy # scipy matplotlib
 # 重建家园脚本
 # py -m pip install requests
+# for PIL
+py -m pip install pillow
 # gpt-academic
 py -m pip install -r "D:\Program Files\gpt-academic\requirements.txt"
 # Wolfram
