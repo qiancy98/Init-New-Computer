@@ -133,7 +133,7 @@ py -m pip install --upgrade pip # --force-reinstall
 # Jupyter
 # py -m pip install jupyter numpy sympy # scipy matplotlib
 # 重建家园脚本
-# py -m pip install requests
+py -m pip install requests watchdog
 # for PIL
 py -m pip install pillow
 # gpt-academic
