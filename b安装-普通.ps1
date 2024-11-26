@@ -1,8 +1,5 @@
 # Encoding: GB2312
-
 # Please use normal ps.
-# Enter this sentence and run this powershell.
-# Set-ExecutionPolicy RemoteSigned -Scope Process
 
 Write-Host "当前时间：$(Get-Date)"
 $startTime = Get-Date
@@ -33,3 +30,5 @@ Write-Output "MiKTeX: 已完成..."
 $endTime = Get-Date
 $duringTime = $endTime - $startTime
 Write-Output "耗时：$($duringTime.TotalMinutes)分钟"
+
+pause

@@ -65,7 +65,8 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 
 | 软件名 | 方法 |
 | - | - |
-| QQ | 安装时修改数据目录 |
+| QQ | 设置中修改数据目录 |
+| QQ NT | 设置中修改数据目录 |
 | 微信 | 设置中修改数据目录 |
 | QQ音乐 | 设置中修改缓存目录 |
 | FreeFileSync | 默认以管理员身份启动 |
@@ -73,6 +74,16 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 | V2ray | 设置开机自启 |
 | SumatraPDF | 设置为默认PDF阅读器 |
 | PowerToys | 需要手动导入设置 |
+
+需要手动安装的软件:
+
+- 米哈游启动器
+- 向日葵远程控制: https://dw.oray.com/sunlogin/windows/SunloginClient_15.8.0.17603_x64.exe
+- Agiso自动发货助手: https://download.agiso.com/AliwwClient/AgisoAliwwClient(6.07.20).exe
+- 按键精灵: http://res.91anjian.com/Mobile/exe/MobileAnjian3.8.0.exe
+- miniconda: 好像winget不能安装miniconda, 待测试
+
+另外, 考虑在移动硬盘缓存《崩坏：星穹铁道》的资源。
 
 ## 致谢
 

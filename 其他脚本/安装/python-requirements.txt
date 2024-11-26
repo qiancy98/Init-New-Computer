@@ -1,0 +1,19 @@
+# 最后更新时间: 2024-11-27
+
+# 科学计算
+# jupyter
+numpy
+# sympy
+# scipy
+matplotlib
+
+# 重建家园脚本
+requests       # 网络请求
+watchdog       # 文件监控
+pillow         # for PIL, 图像处理
+
+# Wolfram
+# wolframclient  # Wolfram
+
+# 判断字符集编码
+# chardet        # Python已自带

@@ -52,6 +52,6 @@ sudo apt-get install g++ --assume-yes --quiet
 bash ./scripts/init.install.MiKTeX.sh
 
 # Jekyll
-cd scripts/ && bash init.install.ruby.sh
+bash ./scripts/init.install.ruby.sh
 
 echo "脚本终止，当前时间：$(date)"

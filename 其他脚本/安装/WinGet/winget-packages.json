@@ -1,0 +1,185 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2024-11-27T01:44:14.978-00:00",
+	"WinGetVersion" : "1.9.25200",
+	"Sources" : 
+	[
+		{
+			"SourceDetails" : 
+			{
+				"Argument" : "https://mirrors.ustc.edu.cn/winget-source",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			},
+			"Description": "GNU 工具",
+			"Packages" : 
+			[
+				{
+					"Description" : "GnuWin32 Make",
+					"PackageIdentifier" : "GnuWin32.Make"
+				},
+				{
+					"Description" : "7zip",
+					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"Description" : "Sed",
+					"PackageIdentifier" : "mbuilov.sed"
+				}
+			]
+		},
+		{
+			"SourceDetails" : 
+			{
+				"Argument" : "https://mirrors.ustc.edu.cn/winget-source",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			},
+			"Description": "编程工具",
+			"Packages" : 
+			[
+				{
+					"Description" : "Windows Terminal - 终端模拟器",
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"Description" : "Visual Studio Code - 轻量级代码编辑器",
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"Description" : "Strawberry Perl - Perl 解释器 & C++ 编译器",
+					"PackageIdentifier" : "StrawberryPerl.StrawberryPerl"
+				},
+				{
+					"Description" : "Java 17",
+					"PackageIdentifier" : "Oracle.JDK.17"
+				},
+				{
+					"Distribution" : "TeX TikzEdt - Tikz 图形编辑器",
+					"PackageIdentifier" : "TikzEdt.TikzEdtBeta"
+				},
+				{
+					"Description" : "Mathpix Snipping Tool - 数学公式截图工具",
+					"PackageIdentifier" : "Mathpix.MathpixSnippingTool"
+				},
+				{
+					"Description" : "Python 3.12",
+					"PackageIdentifier" : "Python.Python.3.12"
+				},
+				{
+					"Description" : "Anaconda - 提供 Python 隔离环境",
+					"PackageIdentifier" : "Anaconda.Miniconda3"
+				},
+				{
+					"Description" : "DotNet 6 - .NET 运行时",
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
+				},
+				{
+					"Description" : "DotNet 7 - .NET 运行时",
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.7"
+				},
+				{
+					"Description" : "DotNet 8 - .NET 运行时",
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
+				},
+				{
+					"Description" : "VCRedist 2015+ x86 - Visual C++ 运行时",
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
+				},
+				{
+					"Description" : "VCRedist 2015+ x64 - Visual C++ 运行时",
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
+				}
+			]
+		},
+		{
+			"SourceDetails" : 
+			{
+				"Argument" : "https://mirrors.ustc.edu.cn/winget-source",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			},
+			"Description": "腾讯系软件",
+			"Packages" : 
+			[
+				{
+					"Description" : "QQ",
+					"PackageIdentifier" : "Tencent.QQ"
+				},
+				{
+					"Description" : "QQ NT",
+					"PackageIdentifier" : "Tencent.QQ.NT"
+				},
+				{
+					"Distribution" : "微信",
+					"PackageIdentifier" : "Tencent.WeChat"
+				},
+				{
+					"Description" : "腾讯会议",
+					"PackageIdentifier" : "Tencent.TencentMeeting"
+				},
+				{
+					"Description" : "QQ影音",
+					"PackageIdentifier" : "Tencent.QQPlayer"
+				},
+				{
+					"Distribution" : "QQ音乐",
+					"PackageIdentifier" : "Tencent.QQMusic"
+				}
+			]
+		},
+		{
+			"SourceDetails" : 
+			{
+				"Argument" : "https://mirrors.ustc.edu.cn/winget-source",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			},
+			"Description": "远程桌面",
+			"Packages" : 
+			[
+				{
+					"Distribution" : "ToDesk远程桌面",
+					"PackageIdentifier" : "Youqu.ToDesk"
+				},
+				{
+					"Description" : "TeamViewer",
+					"PackageIdentifier" : "TeamViewer.TeamViewer"
+				}
+			]
+		},
+		{
+			"SourceDetails" : 
+			{
+				"Argument" : "https://mirrors.ustc.edu.cn/winget-source",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			},
+			"Description": "杂类",
+			"Packages" : 
+			[
+				{
+					"Description" : "坚果云 - 云盘",
+					"PackageIdentifier" : "Nutstore.Nutstore"
+				},
+				{
+					"Description" : "千牛工作台 - 电商工具",
+					"PackageIdentifier" : "Alibaba.AliWorkbench"
+				},
+				{
+					"Distribution" : "Steam - 游戏平台",
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"Description" : "豆包 - 字节跳动AI助手",
+					"PackageIdentifier" : "ByteDance.Doubao"
+				}
+			]
+		}
+	]
+}
