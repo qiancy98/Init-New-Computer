@@ -77,7 +77,7 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
 
 需要手动安装的软件:
 
-- 米哈游启动器
+- 米哈游启动器: https://hyp-webstatic.mihoyo.com/hyp-client/hyp_cn_setup_1.3.3.exe
 - 向日葵远程控制: https://dw.oray.com/sunlogin/windows/SunloginClient_15.8.0.17603_x64.exe
 - Agiso自动发货助手: https://download.agiso.com/AliwwClient/AgisoAliwwClient(6.07.20).exe
 - 按键精灵: http://res.91anjian.com/Mobile/exe/MobileAnjian3.8.0.exe

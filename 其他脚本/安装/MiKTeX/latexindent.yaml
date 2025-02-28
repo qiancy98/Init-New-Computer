@@ -18,6 +18,11 @@ lookForAlignDelims:
         alignDoubleBackSlash: 0
         spacesBeforeAmpersand:
             leadingBlankColumn: 0
+    cases: 
+        delims: 1
+        alignDoubleBackSlash: 0
+        spacesBeforeAmpersand:
+            leadingBlankColumn: 0
     array:
         delims: 1
         alignRowsWithoutMaxDelims: 0
