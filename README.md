@@ -110,6 +110,8 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
     * [latex3/latex3](https://github.com/latex3/latex3)
     * [jlaurens/synctex](https://github.com/jlaurens/synctex)
     * [cmhughes/latexindent.pl](https://github.com/cmhughes/latexindent.pl)
+    * [jbezos/enumitem](https://github.com/jbezos/enumitem)
+    * [CTeX-org/ctex-kit](https://github.com/CTeX-org/ctex-kit) CTeX宏包
   * 软件安装
     * [lukesampson/scoop](https://github.com/lukesampson/scoop) 安装绿色软件用(未尝试)
     * [microsoft/winget-cli](https://github.com/microsoft/winget-cli)
@@ -132,5 +134,7 @@ The files in [常用软件](其他脚本/安装/常用软件/) folder obey their
   * 其他
     * [qinjx/30min_guides](https://github.com/qinjx/30min_guides) 覃健祥的学习笔记(Shell入门)
     * [changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial) 欧长坤的书, C++1x教程
+  * Lean
+    * [Lean-zh/tp-lean-zh](https://github.com/Lean-zh/tp-lean-zh) Lean定理证明的中文翻译
 * 已弃用
   * [nonoroazoro/vscode-syncing](https://github.com/nonoroazoro/vscode-syncing) VS Code同步插件 (已弃用, 因为官方插件已经支持)
