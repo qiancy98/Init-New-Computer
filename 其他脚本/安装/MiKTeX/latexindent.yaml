@@ -41,6 +41,8 @@ indentAfterItems:
 # to use a space " " or maybe a double tab "\t\t"
 indentRules:
     item: '\t'
+    # item: '    '
+# defaultIndent: '    '
 
 # 以下为高级设置，使用-m选项打开。
 # **使用可能有风险**
@@ -56,6 +58,7 @@ modifyLineBreaks:
     #         questionMark: 0     # ?
     #         exclamationMark: 0 # !
     #         other: '(?<![A-Z])(?<!\\right)(?:\.|!|\?)(?=\s|\n)|\n?%.*'
+    condenseMultipleBlankLinesInto: 0
     environments:
         BeginStartsOnOwnLine: 1
         BodyStartsOnOwnLine: 1
@@ -67,6 +70,26 @@ modifyLineBreaks:
             BodyStartsOnOwnLine: 1
             EndStartsOnOwnLine: 1
             EndFinishesWithLineBreak: 1
+        comment:
+            EndFinishesWithLineBreak: 2
+        keyword:
+            BodyStartsOnOwnLine: 0
+        tabular:
+            BodyStartsOnOwnLine: 0
+        cases:
+            BeginStartsOnOwnLine: 0
+            EndFinishesWithLineBreak: 0
+    optionalArguments:
+        theorem:
+            RSqBFinishesWithLineBreak: 1
+        lemma:
+            RSqBFinishesWithLineBreak: 1
+        definition:
+            RSqBFinishesWithLineBreak: 1
+        example:
+            RSqBFinishesWithLineBreak: 1
+        cases:
+            LSqBStartsOnOwnLine: 1
     mandatoryArguments:
         tabular:
             RCuBFinishesWithLineBreak: 1
@@ -78,8 +101,13 @@ modifyLineBreaks:
             MandArgBodyStartsOnOwnLine: 1
             RCuBStartsOnOwnLine: 1
             RCuBFinishesWithLineBreak: 1
+        section:
+            RCuBFinishesWithLineBreak: 1
+        subsection:
+            RCuBFinishesWithLineBreak: 1
     items:
         ItemStartsOnOwnLine: 1
+        ItemFinishesWithLineBreak: -1
     specialBeginEnd:
         displayMath:
             SpecialBeginStartsOnOwnLine: 1
