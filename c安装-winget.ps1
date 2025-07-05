@@ -22,14 +22,15 @@ winget import -i "./其他脚本/安装/WinGet/winget-packages.json"
 # 安装软件 (需要代理)
 
 # 安装Microsoft程序
-winget install --proxy http://localhost:10809 -e --id Microsoft.PowerToys
+winget install --proxy http://localhost:10808 -e --id Microsoft.PowerToys
+winget install --proxy http://localhost:10808 -e --id Microsoft.PowerShell
 
 # 安装GNU程序
-winget install --proxy http://localhost:10809 -e --id Git.Git
+winget install --proxy http://localhost:10808 -e --id Git.Git
 
 # PDF相关
-winget install --proxy http://localhost:10809 -e --id JohnMacFarlane.Pandoc
-winget install --proxy http://localhost:10809 -e --id PDFsam.PDFsam
+winget install --proxy http://localhost:10808 -e --id JohnMacFarlane.Pandoc
+winget install --proxy http://localhost:10808 -e --id PDFsam.PDFsam
 
 # 刷新环境变量
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
